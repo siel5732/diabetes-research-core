@@ -1,0 +1,45 @@
+{
+  "trial_weeks": 52,
+  "cohort_size_per_subgroup": 15,
+  "results": {
+    "arm1_empirical_care": {
+      "mody2": {
+        "mean_a1c": 6.53,
+        "sd_a1c": 0.2,
+        "mean_hypoglycemia_events": 3.53,
+        "mean_annual_cost_usd": 6240.0,
+        "mean_compliance_pct": 70.2
+      },
+      "mody3": {
+        "mean_a1c": 7.49,
+        "sd_a1c": 0.56,
+        "mean_hypoglycemia_events": 4.4,
+        "mean_annual_cost_usd": 9360.0,
+        "mean_compliance_pct": 76.2
+      }
+    },
+    "arm2_precision_care": {
+      "mody2": {
+        "mean_a1c": 6.79,
+        "sd_a1c": 0.2,
+        "mean_hypoglycemia_events": 0.0,
+        "mean_annual_cost_usd": 260.0,
+        "mean_compliance_pct": 100.0
+      },
+      "mody3": {
+        "mean_a1c": 6.46,
+        "sd_a1c": 0.51,
+        "mean_hypoglycemia_events": 0.33,
+        "mean_annual_cost_usd": 416.0,
+        "mean_compliance_pct": 93.7
+      }
+    }
+  },
+  "statistical_inference_mody3_superiority": {
+    "null_hypothesis": "Empirical Insulin MDI therapy is equally effective at controlling MODY3 as genetic-guided Sulfonylureas",
+    "t_statistic": 5.2884,
+    "degrees_of_freedom": 28,
+    "p_value_approximation": "0.000061534960",
+    "reject_null_hypothesis": true
+  }
+}
