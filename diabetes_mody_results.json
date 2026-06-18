@@ -1,0 +1,4046 @@
+{
+  "simulation_duration_hours": 24,
+  "step_size_minutes": 1.0,
+  "trajectories": {
+    "healthy_control": [
+      {
+        "minute": 0,
+        "hour": 0.0,
+        "glucose_mg_dl": 90.0,
+        "insulin_u_ml": 10.2,
+        "insulin_activity_x": 0.0
+      },
+      {
+        "minute": 10,
+        "hour": 0.2,
+        "glucose_mg_dl": 90.0,
+        "insulin_u_ml": 12.2,
+        "insulin_activity_x": 0.1339
+      },
+      {
+        "minute": 20,
+        "hour": 0.3,
+        "glucose_mg_dl": 89.8,
+        "insulin_u_ml": 13.2,
+        "insulin_activity_x": 0.4078
+      },
+      {
+        "minute": 30,
+        "hour": 0.5,
+        "glucose_mg_dl": 89.4,
+        "insulin_u_ml": 13.8,
+        "insulin_activity_x": 0.7218
+      },
+      {
+        "minute": 40,
+        "hour": 0.7,
+        "glucose_mg_dl": 88.9,
+        "insulin_u_ml": 13.9,
+        "insulin_activity_x": 1.0162
+      },
+      {
+        "minute": 50,
+        "hour": 0.8,
+        "glucose_mg_dl": 88.3,
+        "insulin_u_ml": 13.8,
+        "insulin_activity_x": 1.2573
+      },
+      {
+        "minute": 60,
+        "hour": 1.0,
+        "glucose_mg_dl": 87.7,
+        "insulin_u_ml": 13.5,
+        "insulin_activity_x": 1.429
+      },
+      {
+        "minute": 70,
+        "hour": 1.2,
+        "glucose_mg_dl": 87.2,
+        "insulin_u_ml": 13.1,
+        "insulin_activity_x": 1.5284
+      },
+      {
+        "minute": 80,
+        "hour": 1.3,
+        "glucose_mg_dl": 86.7,
+        "insulin_u_ml": 12.6,
+        "insulin_activity_x": 1.5618
+      },
+      {
+        "minute": 90,
+        "hour": 1.5,
+        "glucose_mg_dl": 86.4,
+        "insulin_u_ml": 12.2,
+        "insulin_activity_x": 1.5411
+      },
+      {
+        "minute": 100,
+        "hour": 1.7,
+        "glucose_mg_dl": 86.2,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.481
+      },
+      {
+        "minute": 110,
+        "hour": 1.8,
+        "glucose_mg_dl": 86.1,
+        "insulin_u_ml": 11.6,
+        "insulin_activity_x": 1.3969
+      },
+      {
+        "minute": 120,
+        "hour": 2.0,
+        "glucose_mg_dl": 86.1,
+        "insulin_u_ml": 11.4,
+        "insulin_activity_x": 1.3029
+      },
+      {
+        "minute": 130,
+        "hour": 2.2,
+        "glucose_mg_dl": 86.2,
+        "insulin_u_ml": 11.3,
+        "insulin_activity_x": 1.2107
+      },
+      {
+        "minute": 140,
+        "hour": 2.3,
+        "glucose_mg_dl": 86.3,
+        "insulin_u_ml": 11.3,
+        "insulin_activity_x": 1.1291
+      },
+      {
+        "minute": 150,
+        "hour": 2.5,
+        "glucose_mg_dl": 86.4,
+        "insulin_u_ml": 11.3,
+        "insulin_activity_x": 1.0636
+      },
+      {
+        "minute": 160,
+        "hour": 2.7,
+        "glucose_mg_dl": 86.6,
+        "insulin_u_ml": 11.4,
+        "insulin_activity_x": 1.017
+      },
+      {
+        "minute": 170,
+        "hour": 2.8,
+        "glucose_mg_dl": 86.7,
+        "insulin_u_ml": 11.5,
+        "insulin_activity_x": 0.9894
+      },
+      {
+        "minute": 180,
+        "hour": 3.0,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.6,
+        "insulin_activity_x": 0.979
+      },
+      {
+        "minute": 190,
+        "hour": 3.2,
+        "glucose_mg_dl": 86.9,
+        "insulin_u_ml": 11.7,
+        "insulin_activity_x": 0.9828
+      },
+      {
+        "minute": 200,
+        "hour": 3.3,
+        "glucose_mg_dl": 87.0,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 0.997
+      },
+      {
+        "minute": 210,
+        "hour": 3.5,
+        "glucose_mg_dl": 87.0,
+        "insulin_u_ml": 11.9,
+        "insulin_activity_x": 1.0178
+      },
+      {
+        "minute": 220,
+        "hour": 3.7,
+        "glucose_mg_dl": 87.0,
+        "insulin_u_ml": 11.9,
+        "insulin_activity_x": 1.0415
+      },
+      {
+        "minute": 230,
+        "hour": 3.8,
+        "glucose_mg_dl": 87.0,
+        "insulin_u_ml": 12.0,
+        "insulin_activity_x": 1.065
+      },
+      {
+        "minute": 240,
+        "hour": 4.0,
+        "glucose_mg_dl": 87.0,
+        "insulin_u_ml": 12.0,
+        "insulin_activity_x": 1.0861
+      },
+      {
+        "minute": 250,
+        "hour": 4.2,
+        "glucose_mg_dl": 86.9,
+        "insulin_u_ml": 12.0,
+        "insulin_activity_x": 1.1032
+      },
+      {
+        "minute": 260,
+        "hour": 4.3,
+        "glucose_mg_dl": 86.9,
+        "insulin_u_ml": 11.9,
+        "insulin_activity_x": 1.1156
+      },
+      {
+        "minute": 270,
+        "hour": 4.5,
+        "glucose_mg_dl": 86.9,
+        "insulin_u_ml": 11.9,
+        "insulin_activity_x": 1.1231
+      },
+      {
+        "minute": 280,
+        "hour": 4.7,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.9,
+        "insulin_activity_x": 1.1261
+      },
+      {
+        "minute": 290,
+        "hour": 4.8,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.9,
+        "insulin_activity_x": 1.1254
+      },
+      {
+        "minute": 300,
+        "hour": 5.0,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.122
+      },
+      {
+        "minute": 310,
+        "hour": 5.2,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.1168
+      },
+      {
+        "minute": 320,
+        "hour": 5.3,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.1108
+      },
+      {
+        "minute": 330,
+        "hour": 5.5,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.1048
+      },
+      {
+        "minute": 340,
+        "hour": 5.7,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.0993
+      },
+      {
+        "minute": 350,
+        "hour": 5.8,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.0949
+      },
+      {
+        "minute": 360,
+        "hour": 6.0,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.0916
+      },
+      {
+        "minute": 370,
+        "hour": 6.2,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.0896
+      },
+      {
+        "minute": 380,
+        "hour": 6.3,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.0887
+      },
+      {
+        "minute": 390,
+        "hour": 6.5,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.0888
+      },
+      {
+        "minute": 400,
+        "hour": 6.7,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.0896
+      },
+      {
+        "minute": 410,
+        "hour": 6.8,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.0909
+      },
+      {
+        "minute": 420,
+        "hour": 7.0,
+        "glucose_mg_dl": 86.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 1.0924
+      },
+      {
+        "minute": 430,
+        "hour": 7.2,
+        "glucose_mg_dl": 165.1,
+        "insulin_u_ml": 22.8,
+        "insulin_activity_x": 1.3633
+      },
+      {
+        "minute": 440,
+        "hour": 7.3,
+        "glucose_mg_dl": 349.2,
+        "insulin_u_ml": 83.6,
+        "insulin_activity_x": 5.0677
+      },
+      {
+        "minute": 450,
+        "hour": 7.5,
+        "glucose_mg_dl": 565.7,
+        "insulin_u_ml": 203.5,
+        "insulin_activity_x": 17.898
+      },
+      {
+        "minute": 460,
+        "hour": 7.7,
+        "glucose_mg_dl": 697.6,
+        "insulin_u_ml": 349.8,
+        "insulin_activity_x": 43.3885
+      },
+      {
+        "minute": 470,
+        "hour": 7.8,
+        "glucose_mg_dl": 663.2,
+        "insulin_u_ml": 457.9,
+        "insulin_activity_x": 78.9245
+      },
+      {
+        "minute": 480,
+        "hour": 8.0,
+        "glucose_mg_dl": 527.4,
+        "insulin_u_ml": 484.5,
+        "insulin_activity_x": 115.7719
+      },
+      {
+        "minute": 490,
+        "hour": 8.2,
+        "glucose_mg_dl": 402.2,
+        "insulin_u_ml": 445.5,
+        "insulin_activity_x": 145.0887
+      },
+      {
+        "minute": 500,
+        "hour": 8.3,
+        "glucose_mg_dl": 315.9,
+        "insulin_u_ml": 379.9,
+        "insulin_activity_x": 163.0901
+      },
+      {
+        "minute": 510,
+        "hour": 8.5,
+        "glucose_mg_dl": 250.3,
+        "insulin_u_ml": 310.8,
+        "insulin_activity_x": 170.3051
+      },
+      {
+        "minute": 520,
+        "hour": 8.7,
+        "glucose_mg_dl": 189.1,
+        "insulin_u_ml": 244.4,
+        "insulin_activity_x": 168.7427
+      },
+      {
+        "minute": 530,
+        "hour": 8.8,
+        "glucose_mg_dl": 124.0,
+        "insulin_u_ml": 179.5,
+        "insulin_activity_x": 160.2748
+      },
+      {
+        "minute": 540,
+        "hour": 9.0,
+        "glucose_mg_dl": 51.0,
+        "insulin_u_ml": 115.9,
+        "insulin_activity_x": 146.212
+      },
+      {
+        "minute": 550,
+        "hour": 9.2,
+        "glucose_mg_dl": 21.8,
+        "insulin_u_ml": 73.4,
+        "insulin_activity_x": 128.7126
+      },
+      {
+        "minute": 560,
+        "hour": 9.3,
+        "glucose_mg_dl": 18.9,
+        "insulin_u_ml": 48.0,
+        "insulin_activity_x": 110.704
+      },
+      {
+        "minute": 570,
+        "hour": 9.5,
+        "glucose_mg_dl": 20.2,
+        "insulin_u_ml": 32.7,
+        "insulin_activity_x": 93.7681
+      },
+      {
+        "minute": 580,
+        "hour": 9.7,
+        "glucose_mg_dl": 22.5,
+        "insulin_u_ml": 23.6,
+        "insulin_activity_x": 78.6001
+      },
+      {
+        "minute": 590,
+        "hour": 9.8,
+        "glucose_mg_dl": 25.2,
+        "insulin_u_ml": 18.1,
+        "insulin_activity_x": 65.4103
+      },
+      {
+        "minute": 600,
+        "hour": 10.0,
+        "glucose_mg_dl": 28.3,
+        "insulin_u_ml": 14.9,
+        "insulin_activity_x": 54.1565
+      },
+      {
+        "minute": 610,
+        "hour": 10.2,
+        "glucose_mg_dl": 31.6,
+        "insulin_u_ml": 12.9,
+        "insulin_activity_x": 44.6758
+      },
+      {
+        "minute": 620,
+        "hour": 10.3,
+        "glucose_mg_dl": 35.1,
+        "insulin_u_ml": 11.7,
+        "insulin_activity_x": 36.7584
+      },
+      {
+        "minute": 630,
+        "hour": 10.5,
+        "glucose_mg_dl": 38.7,
+        "insulin_u_ml": 11.0,
+        "insulin_activity_x": 30.187
+      },
+      {
+        "minute": 640,
+        "hour": 10.7,
+        "glucose_mg_dl": 42.4,
+        "insulin_u_ml": 10.6,
+        "insulin_activity_x": 24.7564
+      },
+      {
+        "minute": 650,
+        "hour": 10.8,
+        "glucose_mg_dl": 46.2,
+        "insulin_u_ml": 10.4,
+        "insulin_activity_x": 20.2826
+      },
+      {
+        "minute": 660,
+        "hour": 11.0,
+        "glucose_mg_dl": 50.0,
+        "insulin_u_ml": 10.2,
+        "insulin_activity_x": 16.6051
+      },
+      {
+        "minute": 670,
+        "hour": 11.2,
+        "glucose_mg_dl": 53.6,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 13.5872
+      },
+      {
+        "minute": 680,
+        "hour": 11.3,
+        "glucose_mg_dl": 57.2,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 11.1135
+      },
+      {
+        "minute": 690,
+        "hour": 11.5,
+        "glucose_mg_dl": 60.6,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 9.0876
+      },
+      {
+        "minute": 700,
+        "hour": 11.7,
+        "glucose_mg_dl": 63.8,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 7.4294
+      },
+      {
+        "minute": 710,
+        "hour": 11.8,
+        "glucose_mg_dl": 66.8,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 6.0729
+      },
+      {
+        "minute": 720,
+        "hour": 12.0,
+        "glucose_mg_dl": 69.6,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 4.9635
+      },
+      {
+        "minute": 730,
+        "hour": 12.2,
+        "glucose_mg_dl": 175.6,
+        "insulin_u_ml": 20.2,
+        "insulin_activity_x": 4.2334
+      },
+      {
+        "minute": 740,
+        "hour": 12.3,
+        "glucose_mg_dl": 419.5,
+        "insulin_u_ml": 97.3,
+        "insulin_activity_x": 7.7614
+      },
+      {
+        "minute": 750,
+        "hour": 12.5,
+        "glucose_mg_dl": 698.5,
+        "insulin_u_ml": 253.0,
+        "insulin_activity_x": 23.3026
+      },
+      {
+        "minute": 760,
+        "hour": 12.7,
+        "glucose_mg_dl": 842.1,
+        "insulin_u_ml": 437.5,
+        "insulin_activity_x": 55.305
+      },
+      {
+        "minute": 770,
+        "hour": 12.8,
+        "glucose_mg_dl": 756.0,
+        "insulin_u_ml": 559.4,
+        "insulin_activity_x": 99.3006
+      },
+      {
+        "minute": 780,
+        "hour": 13.0,
+        "glucose_mg_dl": 574.1,
+        "insulin_u_ml": 572.1,
+        "insulin_activity_x": 143.0056
+      },
+      {
+        "minute": 790,
+        "hour": 13.2,
+        "glucose_mg_dl": 436.6,
+        "insulin_u_ml": 513.5,
+        "insulin_activity_x": 175.9211
+      },
+      {
+        "minute": 800,
+        "hour": 13.3,
+        "glucose_mg_dl": 348.2,
+        "insulin_u_ml": 434.0,
+        "insulin_activity_x": 194.9794
+      },
+      {
+        "minute": 810,
+        "hour": 13.5,
+        "glucose_mg_dl": 278.3,
+        "insulin_u_ml": 355.4,
+        "insulin_activity_x": 201.787
+      },
+      {
+        "minute": 820,
+        "hour": 13.7,
+        "glucose_mg_dl": 209.7,
+        "insulin_u_ml": 281.0,
+        "insulin_activity_x": 198.9469
+      },
+      {
+        "minute": 830,
+        "hour": 13.8,
+        "glucose_mg_dl": 134.6,
+        "insulin_u_ml": 207.7,
+        "insulin_activity_x": 188.5518
+      },
+      {
+        "minute": 840,
+        "hour": 14.0,
+        "glucose_mg_dl": 48.9,
+        "insulin_u_ml": 134.4,
+        "insulin_activity_x": 171.9388
+      },
+      {
+        "minute": 850,
+        "hour": 14.2,
+        "glucose_mg_dl": 18.3,
+        "insulin_u_ml": 84.5,
+        "insulin_activity_x": 151.3522
+      },
+      {
+        "minute": 860,
+        "hour": 14.3,
+        "glucose_mg_dl": 16.4,
+        "insulin_u_ml": 54.6,
+        "insulin_activity_x": 130.1714
+      },
+      {
+        "minute": 870,
+        "hour": 14.5,
+        "glucose_mg_dl": 17.8,
+        "insulin_u_ml": 36.7,
+        "insulin_activity_x": 110.2547
+      },
+      {
+        "minute": 880,
+        "hour": 14.7,
+        "glucose_mg_dl": 20.1,
+        "insulin_u_ml": 26.0,
+        "insulin_activity_x": 92.4183
+      },
+      {
+        "minute": 890,
+        "hour": 14.8,
+        "glucose_mg_dl": 22.7,
+        "insulin_u_ml": 19.6,
+        "insulin_activity_x": 76.9089
+      },
+      {
+        "minute": 900,
+        "hour": 15.0,
+        "glucose_mg_dl": 25.6,
+        "insulin_u_ml": 15.7,
+        "insulin_activity_x": 63.6762
+      },
+      {
+        "minute": 910,
+        "hour": 15.2,
+        "glucose_mg_dl": 28.7,
+        "insulin_u_ml": 13.4,
+        "insulin_activity_x": 52.5287
+      },
+      {
+        "minute": 920,
+        "hour": 15.3,
+        "glucose_mg_dl": 32.1,
+        "insulin_u_ml": 12.1,
+        "insulin_activity_x": 43.2195
+      },
+      {
+        "minute": 930,
+        "hour": 15.5,
+        "glucose_mg_dl": 35.7,
+        "insulin_u_ml": 11.2,
+        "insulin_activity_x": 35.4929
+      },
+      {
+        "minute": 940,
+        "hour": 15.7,
+        "glucose_mg_dl": 39.4,
+        "insulin_u_ml": 10.7,
+        "insulin_activity_x": 29.1077
+      },
+      {
+        "minute": 950,
+        "hour": 15.8,
+        "glucose_mg_dl": 43.1,
+        "insulin_u_ml": 10.4,
+        "insulin_activity_x": 23.8475
+      },
+      {
+        "minute": 960,
+        "hour": 16.0,
+        "glucose_mg_dl": 46.9,
+        "insulin_u_ml": 10.3,
+        "insulin_activity_x": 19.5236
+      },
+      {
+        "minute": 970,
+        "hour": 16.2,
+        "glucose_mg_dl": 50.7,
+        "insulin_u_ml": 10.2,
+        "insulin_activity_x": 15.9753
+      },
+      {
+        "minute": 980,
+        "hour": 16.3,
+        "glucose_mg_dl": 54.3,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 13.0668
+      },
+      {
+        "minute": 990,
+        "hour": 16.5,
+        "glucose_mg_dl": 57.9,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 10.6848
+      },
+      {
+        "minute": 1000,
+        "hour": 16.7,
+        "glucose_mg_dl": 61.2,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 8.7352
+      },
+      {
+        "minute": 1010,
+        "hour": 16.8,
+        "glucose_mg_dl": 64.4,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 7.1403
+      },
+      {
+        "minute": 1020,
+        "hour": 17.0,
+        "glucose_mg_dl": 67.4,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 5.8359
+      },
+      {
+        "minute": 1030,
+        "hour": 17.2,
+        "glucose_mg_dl": 70.1,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 4.7694
+      },
+      {
+        "minute": 1040,
+        "hour": 17.3,
+        "glucose_mg_dl": 72.6,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 3.8976
+      },
+      {
+        "minute": 1050,
+        "hour": 17.5,
+        "glucose_mg_dl": 74.9,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 3.185
+      },
+      {
+        "minute": 1060,
+        "hour": 17.7,
+        "glucose_mg_dl": 77.0,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 2.6026
+      },
+      {
+        "minute": 1070,
+        "hour": 17.8,
+        "glucose_mg_dl": 78.8,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 2.1266
+      },
+      {
+        "minute": 1080,
+        "hour": 18.0,
+        "glucose_mg_dl": 80.4,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 1.7377
+      },
+      {
+        "minute": 1090,
+        "hour": 18.2,
+        "glucose_mg_dl": 81.8,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 1.4199
+      },
+      {
+        "minute": 1100,
+        "hour": 18.3,
+        "glucose_mg_dl": 83.0,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 1.1602
+      },
+      {
+        "minute": 1110,
+        "hour": 18.5,
+        "glucose_mg_dl": 84.1,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 0.948
+      },
+      {
+        "minute": 1120,
+        "hour": 18.7,
+        "glucose_mg_dl": 85.0,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 0.7746
+      },
+      {
+        "minute": 1130,
+        "hour": 18.8,
+        "glucose_mg_dl": 85.8,
+        "insulin_u_ml": 10.2,
+        "insulin_activity_x": 0.6379
+      },
+      {
+        "minute": 1140,
+        "hour": 19.0,
+        "glucose_mg_dl": 86.4,
+        "insulin_u_ml": 10.5,
+        "insulin_activity_x": 0.5567
+      },
+      {
+        "minute": 1150,
+        "hour": 19.2,
+        "glucose_mg_dl": 217.6,
+        "insulin_u_ml": 29.3,
+        "insulin_activity_x": 0.9871
+      },
+      {
+        "minute": 1160,
+        "hour": 19.3,
+        "glucose_mg_dl": 523.2,
+        "insulin_u_ml": 131.1,
+        "insulin_activity_x": 7.2014
+      },
+      {
+        "minute": 1170,
+        "hour": 19.5,
+        "glucose_mg_dl": 854.6,
+        "insulin_u_ml": 326.8,
+        "insulin_activity_x": 28.5296
+      },
+      {
+        "minute": 1180,
+        "hour": 19.7,
+        "glucose_mg_dl": 971.8,
+        "insulin_u_ml": 542.4,
+        "insulin_activity_x": 69.5175
+      },
+      {
+        "minute": 1190,
+        "hour": 19.8,
+        "glucose_mg_dl": 808.1,
+        "insulin_u_ml": 658.5,
+        "insulin_activity_x": 122.4762
+      },
+      {
+        "minute": 1200,
+        "hour": 20.0,
+        "glucose_mg_dl": 594.3,
+        "insulin_u_ml": 644.1,
+        "insulin_activity_x": 171.4654
+      },
+      {
+        "minute": 1210,
+        "hour": 20.2,
+        "glucose_mg_dl": 460.0,
+        "insulin_u_ml": 565.0,
+        "insulin_activity_x": 205.914
+      },
+      {
+        "minute": 1220,
+        "hour": 20.3,
+        "glucose_mg_dl": 374.8,
+        "insulin_u_ml": 475.1,
+        "insulin_activity_x": 224.5364
+      },
+      {
+        "minute": 1230,
+        "hour": 20.5,
+        "glucose_mg_dl": 302.7,
+        "insulin_u_ml": 390.4,
+        "insulin_activity_x": 230.1107
+      },
+      {
+        "minute": 1240,
+        "hour": 20.7,
+        "glucose_mg_dl": 228.1,
+        "insulin_u_ml": 310.6,
+        "insulin_activity_x": 225.6552
+      },
+      {
+        "minute": 1250,
+        "hour": 20.8,
+        "glucose_mg_dl": 144.2,
+        "insulin_u_ml": 231.2,
+        "insulin_activity_x": 213.3226
+      },
+      {
+        "minute": 1260,
+        "hour": 21.0,
+        "glucose_mg_dl": 47.3,
+        "insulin_u_ml": 150.1,
+        "insulin_activity_x": 194.3741
+      },
+      {
+        "minute": 1270,
+        "hour": 21.2,
+        "glucose_mg_dl": 16.0,
+        "insulin_u_ml": 93.9,
+        "insulin_activity_x": 171.0513
+      },
+      {
+        "minute": 1280,
+        "hour": 21.3,
+        "glucose_mg_dl": 14.7,
+        "insulin_u_ml": 60.2,
+        "insulin_activity_x": 147.086
+      },
+      {
+        "minute": 1290,
+        "hour": 21.5,
+        "glucose_mg_dl": 16.2,
+        "insulin_u_ml": 40.1,
+        "insulin_activity_x": 124.5655
+      },
+      {
+        "minute": 1300,
+        "hour": 21.7,
+        "glucose_mg_dl": 18.3,
+        "insulin_u_ml": 28.0,
+        "insulin_activity_x": 104.4049
+      },
+      {
+        "minute": 1310,
+        "hour": 21.8,
+        "glucose_mg_dl": 20.8,
+        "insulin_u_ml": 20.8,
+        "insulin_activity_x": 86.8785
+      },
+      {
+        "minute": 1320,
+        "hour": 22.0,
+        "glucose_mg_dl": 23.6,
+        "insulin_u_ml": 16.5,
+        "insulin_activity_x": 71.9274
+      },
+      {
+        "minute": 1330,
+        "hour": 22.2,
+        "glucose_mg_dl": 26.7,
+        "insulin_u_ml": 13.9,
+        "insulin_activity_x": 59.3335
+      },
+      {
+        "minute": 1340,
+        "hour": 22.3,
+        "glucose_mg_dl": 29.9,
+        "insulin_u_ml": 12.3,
+        "insulin_activity_x": 48.8172
+      },
+      {
+        "minute": 1350,
+        "hour": 22.5,
+        "glucose_mg_dl": 33.4,
+        "insulin_u_ml": 11.4,
+        "insulin_activity_x": 40.0893
+      },
+      {
+        "minute": 1360,
+        "hour": 22.7,
+        "glucose_mg_dl": 37.1,
+        "insulin_u_ml": 10.8,
+        "insulin_activity_x": 32.8768
+      },
+      {
+        "minute": 1370,
+        "hour": 22.8,
+        "glucose_mg_dl": 40.8,
+        "insulin_u_ml": 10.5,
+        "insulin_activity_x": 26.9352
+      },
+      {
+        "minute": 1380,
+        "hour": 23.0,
+        "glucose_mg_dl": 44.6,
+        "insulin_u_ml": 10.3,
+        "insulin_activity_x": 22.0514
+      },
+      {
+        "minute": 1390,
+        "hour": 23.2,
+        "glucose_mg_dl": 48.4,
+        "insulin_u_ml": 10.2,
+        "insulin_activity_x": 18.0435
+      },
+      {
+        "minute": 1400,
+        "hour": 23.3,
+        "glucose_mg_dl": 52.1,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 14.7584
+      },
+      {
+        "minute": 1410,
+        "hour": 23.5,
+        "glucose_mg_dl": 55.7,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 12.068
+      },
+      {
+        "minute": 1420,
+        "hour": 23.7,
+        "glucose_mg_dl": 59.2,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 9.866
+      },
+      {
+        "minute": 1430,
+        "hour": 23.8,
+        "glucose_mg_dl": 62.5,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 8.0646
+      }
+    ],
+    "mody2_gck_mutant": [
+      {
+        "minute": 0,
+        "hour": 0.0,
+        "glucose_mg_dl": 130.0,
+        "insulin_u_ml": 10.2,
+        "insulin_activity_x": 0.0
+      },
+      {
+        "minute": 10,
+        "hour": 0.2,
+        "glucose_mg_dl": 129.9,
+        "insulin_u_ml": 12.2,
+        "insulin_activity_x": 0.1339
+      },
+      {
+        "minute": 20,
+        "hour": 0.3,
+        "glucose_mg_dl": 129.7,
+        "insulin_u_ml": 13.2,
+        "insulin_activity_x": 0.4068
+      },
+      {
+        "minute": 30,
+        "hour": 0.5,
+        "glucose_mg_dl": 129.1,
+        "insulin_u_ml": 13.7,
+        "insulin_activity_x": 0.7159
+      },
+      {
+        "minute": 40,
+        "hour": 0.7,
+        "glucose_mg_dl": 128.4,
+        "insulin_u_ml": 13.7,
+        "insulin_activity_x": 0.9969
+      },
+      {
+        "minute": 50,
+        "hour": 0.8,
+        "glucose_mg_dl": 127.6,
+        "insulin_u_ml": 13.4,
+        "insulin_activity_x": 1.2118
+      },
+      {
+        "minute": 60,
+        "hour": 1.0,
+        "glucose_mg_dl": 126.8,
+        "insulin_u_ml": 12.9,
+        "insulin_activity_x": 1.3431
+      },
+      {
+        "minute": 70,
+        "hour": 1.2,
+        "glucose_mg_dl": 126.1,
+        "insulin_u_ml": 12.3,
+        "insulin_activity_x": 1.3892
+      },
+      {
+        "minute": 80,
+        "hour": 1.3,
+        "glucose_mg_dl": 125.6,
+        "insulin_u_ml": 11.7,
+        "insulin_activity_x": 1.3606
+      },
+      {
+        "minute": 90,
+        "hour": 1.5,
+        "glucose_mg_dl": 125.3,
+        "insulin_u_ml": 11.2,
+        "insulin_activity_x": 1.2751
+      },
+      {
+        "minute": 100,
+        "hour": 1.7,
+        "glucose_mg_dl": 125.2,
+        "insulin_u_ml": 10.8,
+        "insulin_activity_x": 1.1544
+      },
+      {
+        "minute": 110,
+        "hour": 1.8,
+        "glucose_mg_dl": 125.3,
+        "insulin_u_ml": 10.6,
+        "insulin_activity_x": 1.0203
+      },
+      {
+        "minute": 120,
+        "hour": 2.0,
+        "glucose_mg_dl": 125.5,
+        "insulin_u_ml": 10.5,
+        "insulin_activity_x": 0.8919
+      },
+      {
+        "minute": 130,
+        "hour": 2.2,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 10.5,
+        "insulin_activity_x": 0.7837
+      },
+      {
+        "minute": 140,
+        "hour": 2.3,
+        "glucose_mg_dl": 126.0,
+        "insulin_u_ml": 10.7,
+        "insulin_activity_x": 0.705
+      },
+      {
+        "minute": 150,
+        "hour": 2.5,
+        "glucose_mg_dl": 126.3,
+        "insulin_u_ml": 10.9,
+        "insulin_activity_x": 0.6596
+      },
+      {
+        "minute": 160,
+        "hour": 2.7,
+        "glucose_mg_dl": 126.6,
+        "insulin_u_ml": 11.1,
+        "insulin_activity_x": 0.6466
+      },
+      {
+        "minute": 170,
+        "hour": 2.8,
+        "glucose_mg_dl": 126.7,
+        "insulin_u_ml": 11.3,
+        "insulin_activity_x": 0.6611
+      },
+      {
+        "minute": 180,
+        "hour": 3.0,
+        "glucose_mg_dl": 126.9,
+        "insulin_u_ml": 11.5,
+        "insulin_activity_x": 0.6961
+      },
+      {
+        "minute": 190,
+        "hour": 3.2,
+        "glucose_mg_dl": 126.9,
+        "insulin_u_ml": 11.7,
+        "insulin_activity_x": 0.7433
+      },
+      {
+        "minute": 200,
+        "hour": 3.3,
+        "glucose_mg_dl": 126.8,
+        "insulin_u_ml": 11.7,
+        "insulin_activity_x": 0.7944
+      },
+      {
+        "minute": 210,
+        "hour": 3.5,
+        "glucose_mg_dl": 126.8,
+        "insulin_u_ml": 11.8,
+        "insulin_activity_x": 0.8423
+      },
+      {
+        "minute": 220,
+        "hour": 3.7,
+        "glucose_mg_dl": 126.7,
+        "insulin_u_ml": 11.7,
+        "insulin_activity_x": 0.8819
+      },
+      {
+        "minute": 230,
+        "hour": 3.8,
+        "glucose_mg_dl": 126.5,
+        "insulin_u_ml": 11.7,
+        "insulin_activity_x": 0.9098
+      },
+      {
+        "minute": 240,
+        "hour": 4.0,
+        "glucose_mg_dl": 126.4,
+        "insulin_u_ml": 11.6,
+        "insulin_activity_x": 0.9249
+      },
+      {
+        "minute": 250,
+        "hour": 4.2,
+        "glucose_mg_dl": 126.3,
+        "insulin_u_ml": 11.5,
+        "insulin_activity_x": 0.9278
+      },
+      {
+        "minute": 260,
+        "hour": 4.3,
+        "glucose_mg_dl": 126.3,
+        "insulin_u_ml": 11.4,
+        "insulin_activity_x": 0.9207
+      },
+      {
+        "minute": 270,
+        "hour": 4.5,
+        "glucose_mg_dl": 126.2,
+        "insulin_u_ml": 11.4,
+        "insulin_activity_x": 0.9063
+      },
+      {
+        "minute": 280,
+        "hour": 4.7,
+        "glucose_mg_dl": 126.2,
+        "insulin_u_ml": 11.3,
+        "insulin_activity_x": 0.8878
+      },
+      {
+        "minute": 290,
+        "hour": 4.8,
+        "glucose_mg_dl": 126.3,
+        "insulin_u_ml": 11.3,
+        "insulin_activity_x": 0.8683
+      },
+      {
+        "minute": 300,
+        "hour": 5.0,
+        "glucose_mg_dl": 126.3,
+        "insulin_u_ml": 11.3,
+        "insulin_activity_x": 0.8505
+      },
+      {
+        "minute": 310,
+        "hour": 5.2,
+        "glucose_mg_dl": 126.3,
+        "insulin_u_ml": 11.3,
+        "insulin_activity_x": 0.8361
+      },
+      {
+        "minute": 320,
+        "hour": 5.3,
+        "glucose_mg_dl": 126.4,
+        "insulin_u_ml": 11.3,
+        "insulin_activity_x": 0.8263
+      },
+      {
+        "minute": 330,
+        "hour": 5.5,
+        "glucose_mg_dl": 126.4,
+        "insulin_u_ml": 11.3,
+        "insulin_activity_x": 0.8213
+      },
+      {
+        "minute": 340,
+        "hour": 5.7,
+        "glucose_mg_dl": 126.4,
+        "insulin_u_ml": 11.4,
+        "insulin_activity_x": 0.8209
+      },
+      {
+        "minute": 350,
+        "hour": 5.8,
+        "glucose_mg_dl": 126.5,
+        "insulin_u_ml": 11.4,
+        "insulin_activity_x": 0.8242
+      },
+      {
+        "minute": 360,
+        "hour": 6.0,
+        "glucose_mg_dl": 126.5,
+        "insulin_u_ml": 11.4,
+        "insulin_activity_x": 0.83
+      },
+      {
+        "minute": 370,
+        "hour": 6.2,
+        "glucose_mg_dl": 126.5,
+        "insulin_u_ml": 11.5,
+        "insulin_activity_x": 0.8372
+      },
+      {
+        "minute": 380,
+        "hour": 6.3,
+        "glucose_mg_dl": 126.5,
+        "insulin_u_ml": 11.5,
+        "insulin_activity_x": 0.8446
+      },
+      {
+        "minute": 390,
+        "hour": 6.5,
+        "glucose_mg_dl": 126.5,
+        "insulin_u_ml": 11.5,
+        "insulin_activity_x": 0.8512
+      },
+      {
+        "minute": 400,
+        "hour": 6.7,
+        "glucose_mg_dl": 126.4,
+        "insulin_u_ml": 11.5,
+        "insulin_activity_x": 0.8564
+      },
+      {
+        "minute": 410,
+        "hour": 6.8,
+        "glucose_mg_dl": 126.4,
+        "insulin_u_ml": 11.5,
+        "insulin_activity_x": 0.8599
+      },
+      {
+        "minute": 420,
+        "hour": 7.0,
+        "glucose_mg_dl": 126.4,
+        "insulin_u_ml": 11.4,
+        "insulin_activity_x": 0.8614
+      },
+      {
+        "minute": 430,
+        "hour": 7.2,
+        "glucose_mg_dl": 204.7,
+        "insulin_u_ml": 22.4,
+        "insulin_activity_x": 1.1307
+      },
+      {
+        "minute": 440,
+        "hour": 7.3,
+        "glucose_mg_dl": 388.6,
+        "insulin_u_ml": 83.2,
+        "insulin_activity_x": 4.8335
+      },
+      {
+        "minute": 450,
+        "hour": 7.5,
+        "glucose_mg_dl": 602.8,
+        "insulin_u_ml": 202.7,
+        "insulin_activity_x": 17.6481
+      },
+      {
+        "minute": 460,
+        "hour": 7.7,
+        "glucose_mg_dl": 728.6,
+        "insulin_u_ml": 347.1,
+        "insulin_activity_x": 43.0165
+      },
+      {
+        "minute": 470,
+        "hour": 7.8,
+        "glucose_mg_dl": 686.0,
+        "insulin_u_ml": 451.0,
+        "insulin_activity_x": 78.1289
+      },
+      {
+        "minute": 480,
+        "hour": 8.0,
+        "glucose_mg_dl": 544.4,
+        "insulin_u_ml": 472.2,
+        "insulin_activity_x": 114.0932
+      },
+      {
+        "minute": 490,
+        "hour": 8.2,
+        "glucose_mg_dl": 416.8,
+        "insulin_u_ml": 428.4,
+        "insulin_activity_x": 142.1104
+      },
+      {
+        "minute": 500,
+        "hour": 8.3,
+        "glucose_mg_dl": 329.9,
+        "insulin_u_ml": 359.3,
+        "insulin_activity_x": 158.586
+      },
+      {
+        "minute": 510,
+        "hour": 8.5,
+        "glucose_mg_dl": 264.3,
+        "insulin_u_ml": 288.1,
+        "insulin_activity_x": 164.2422
+      },
+      {
+        "minute": 520,
+        "hour": 8.7,
+        "glucose_mg_dl": 202.9,
+        "insulin_u_ml": 220.3,
+        "insulin_activity_x": 161.2159
+      },
+      {
+        "minute": 530,
+        "hour": 8.8,
+        "glucose_mg_dl": 137.3,
+        "insulin_u_ml": 154.5,
+        "insulin_activity_x": 151.4328
+      },
+      {
+        "minute": 540,
+        "hour": 9.0,
+        "glucose_mg_dl": 62.7,
+        "insulin_u_ml": 97.1,
+        "insulin_activity_x": 136.4181
+      },
+      {
+        "minute": 550,
+        "hour": 9.2,
+        "glucose_mg_dl": 31.6,
+        "insulin_u_ml": 62.1,
+        "insulin_activity_x": 119.0667
+      },
+      {
+        "minute": 560,
+        "hour": 9.3,
+        "glucose_mg_dl": 28.8,
+        "insulin_u_ml": 41.2,
+        "insulin_activity_x": 101.8384
+      },
+      {
+        "minute": 570,
+        "hour": 9.5,
+        "glucose_mg_dl": 31.0,
+        "insulin_u_ml": 28.7,
+        "insulin_activity_x": 85.9351
+      },
+      {
+        "minute": 580,
+        "hour": 9.7,
+        "glucose_mg_dl": 34.5,
+        "insulin_u_ml": 21.2,
+        "insulin_activity_x": 71.8471
+      },
+      {
+        "minute": 590,
+        "hour": 9.8,
+        "glucose_mg_dl": 38.6,
+        "insulin_u_ml": 16.7,
+        "insulin_activity_x": 59.6814
+      },
+      {
+        "minute": 600,
+        "hour": 10.0,
+        "glucose_mg_dl": 43.2,
+        "insulin_u_ml": 14.0,
+        "insulin_activity_x": 49.3491
+      },
+      {
+        "minute": 610,
+        "hour": 10.2,
+        "glucose_mg_dl": 48.0,
+        "insulin_u_ml": 12.4,
+        "insulin_activity_x": 40.6721
+      },
+      {
+        "minute": 620,
+        "hour": 10.3,
+        "glucose_mg_dl": 53.2,
+        "insulin_u_ml": 11.4,
+        "insulin_activity_x": 33.4418
+      },
+      {
+        "minute": 630,
+        "hour": 10.5,
+        "glucose_mg_dl": 58.5,
+        "insulin_u_ml": 10.9,
+        "insulin_activity_x": 27.4499
+      },
+      {
+        "minute": 640,
+        "hour": 10.7,
+        "glucose_mg_dl": 63.9,
+        "insulin_u_ml": 10.5,
+        "insulin_activity_x": 22.5038
+      },
+      {
+        "minute": 650,
+        "hour": 10.8,
+        "glucose_mg_dl": 69.4,
+        "insulin_u_ml": 10.3,
+        "insulin_activity_x": 18.4322
+      },
+      {
+        "minute": 660,
+        "hour": 11.0,
+        "glucose_mg_dl": 74.7,
+        "insulin_u_ml": 10.2,
+        "insulin_activity_x": 15.0874
+      },
+      {
+        "minute": 670,
+        "hour": 11.2,
+        "glucose_mg_dl": 80.0,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 12.3437
+      },
+      {
+        "minute": 680,
+        "hour": 11.3,
+        "glucose_mg_dl": 85.0,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 10.0953
+      },
+      {
+        "minute": 690,
+        "hour": 11.5,
+        "glucose_mg_dl": 89.8,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 8.2544
+      },
+      {
+        "minute": 700,
+        "hour": 11.7,
+        "glucose_mg_dl": 94.3,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 6.7479
+      },
+      {
+        "minute": 710,
+        "hour": 11.8,
+        "glucose_mg_dl": 98.5,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 5.5156
+      },
+      {
+        "minute": 720,
+        "hour": 12.0,
+        "glucose_mg_dl": 102.4,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 4.5079
+      },
+      {
+        "minute": 730,
+        "hour": 12.2,
+        "glucose_mg_dl": 209.4,
+        "insulin_u_ml": 18.5,
+        "insulin_activity_x": 3.8086
+      },
+      {
+        "minute": 740,
+        "hour": 12.3,
+        "glucose_mg_dl": 454.8,
+        "insulin_u_ml": 94.1,
+        "insulin_activity_x": 7.1367
+      },
+      {
+        "minute": 750,
+        "hour": 12.5,
+        "glucose_mg_dl": 734.6,
+        "insulin_u_ml": 249.4,
+        "insulin_activity_x": 22.4157
+      },
+      {
+        "minute": 760,
+        "hour": 12.7,
+        "glucose_mg_dl": 875.1,
+        "insulin_u_ml": 433.4,
+        "insulin_activity_x": 54.1715
+      },
+      {
+        "minute": 770,
+        "hour": 12.8,
+        "glucose_mg_dl": 781.0,
+        "insulin_u_ml": 552.6,
+        "insulin_activity_x": 97.8133
+      },
+      {
+        "minute": 780,
+        "hour": 13.0,
+        "glucose_mg_dl": 591.7,
+        "insulin_u_ml": 560.5,
+        "insulin_activity_x": 140.8136
+      },
+      {
+        "minute": 790,
+        "hour": 13.2,
+        "glucose_mg_dl": 450.6,
+        "insulin_u_ml": 496.7,
+        "insulin_activity_x": 172.5814
+      },
+      {
+        "minute": 800,
+        "hour": 13.3,
+        "glucose_mg_dl": 361.3,
+        "insulin_u_ml": 413.3,
+        "insulin_activity_x": 190.1907
+      },
+      {
+        "minute": 810,
+        "hour": 13.5,
+        "glucose_mg_dl": 291.4,
+        "insulin_u_ml": 332.2,
+        "insulin_activity_x": 195.4597
+      },
+      {
+        "minute": 820,
+        "hour": 13.7,
+        "glucose_mg_dl": 222.7,
+        "insulin_u_ml": 256.3,
+        "insulin_activity_x": 191.1466
+      },
+      {
+        "minute": 830,
+        "hour": 13.8,
+        "glucose_mg_dl": 146.8,
+        "insulin_u_ml": 182.0,
+        "insulin_activity_x": 179.4126
+      },
+      {
+        "minute": 840,
+        "hour": 14.0,
+        "glucose_mg_dl": 59.2,
+        "insulin_u_ml": 114.3,
+        "insulin_activity_x": 161.7732
+      },
+      {
+        "minute": 850,
+        "hour": 14.2,
+        "glucose_mg_dl": 26.7,
+        "insulin_u_ml": 72.5,
+        "insulin_activity_x": 141.2905
+      },
+      {
+        "minute": 860,
+        "hour": 14.3,
+        "glucose_mg_dl": 24.9,
+        "insulin_u_ml": 47.4,
+        "insulin_activity_x": 120.8991
+      },
+      {
+        "minute": 870,
+        "hour": 14.5,
+        "glucose_mg_dl": 27.2,
+        "insulin_u_ml": 32.4,
+        "insulin_activity_x": 102.0492
+      },
+      {
+        "minute": 880,
+        "hour": 14.7,
+        "glucose_mg_dl": 30.6,
+        "insulin_u_ml": 23.4,
+        "insulin_activity_x": 85.337
+      },
+      {
+        "minute": 890,
+        "hour": 14.8,
+        "glucose_mg_dl": 34.5,
+        "insulin_u_ml": 18.0,
+        "insulin_activity_x": 70.8973
+      },
+      {
+        "minute": 900,
+        "hour": 15.0,
+        "glucose_mg_dl": 38.9,
+        "insulin_u_ml": 14.8,
+        "insulin_activity_x": 58.6292
+      },
+      {
+        "minute": 910,
+        "hour": 15.2,
+        "glucose_mg_dl": 43.6,
+        "insulin_u_ml": 12.9,
+        "insulin_activity_x": 48.324
+      },
+      {
+        "minute": 920,
+        "hour": 15.3,
+        "glucose_mg_dl": 48.6,
+        "insulin_u_ml": 11.7,
+        "insulin_activity_x": 39.7356
+      },
+      {
+        "minute": 930,
+        "hour": 15.5,
+        "glucose_mg_dl": 53.8,
+        "insulin_u_ml": 11.0,
+        "insulin_activity_x": 32.6173
+      },
+      {
+        "minute": 940,
+        "hour": 15.7,
+        "glucose_mg_dl": 59.2,
+        "insulin_u_ml": 10.6,
+        "insulin_activity_x": 26.7408
+      },
+      {
+        "minute": 950,
+        "hour": 15.8,
+        "glucose_mg_dl": 64.6,
+        "insulin_u_ml": 10.4,
+        "insulin_activity_x": 21.9031
+      },
+      {
+        "minute": 960,
+        "hour": 16.0,
+        "glucose_mg_dl": 70.1,
+        "insulin_u_ml": 10.2,
+        "insulin_activity_x": 17.9287
+      },
+      {
+        "minute": 970,
+        "hour": 16.2,
+        "glucose_mg_dl": 75.4,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 14.6684
+      },
+      {
+        "minute": 980,
+        "hour": 16.3,
+        "glucose_mg_dl": 80.7,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 11.9967
+      },
+      {
+        "minute": 990,
+        "hour": 16.5,
+        "glucose_mg_dl": 85.7,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 9.8091
+      },
+      {
+        "minute": 1000,
+        "hour": 16.7,
+        "glucose_mg_dl": 90.5,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 8.0189
+      },
+      {
+        "minute": 1010,
+        "hour": 16.8,
+        "glucose_mg_dl": 94.9,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 6.5545
+      },
+      {
+        "minute": 1020,
+        "hour": 17.0,
+        "glucose_mg_dl": 99.1,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 5.357
+      },
+      {
+        "minute": 1030,
+        "hour": 17.2,
+        "glucose_mg_dl": 102.9,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 4.378
+      },
+      {
+        "minute": 1040,
+        "hour": 17.3,
+        "glucose_mg_dl": 106.4,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 3.5777
+      },
+      {
+        "minute": 1050,
+        "hour": 17.5,
+        "glucose_mg_dl": 109.5,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 2.9235
+      },
+      {
+        "minute": 1060,
+        "hour": 17.7,
+        "glucose_mg_dl": 112.3,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 2.3889
+      },
+      {
+        "minute": 1070,
+        "hour": 17.8,
+        "glucose_mg_dl": 114.8,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 1.952
+      },
+      {
+        "minute": 1080,
+        "hour": 18.0,
+        "glucose_mg_dl": 117.0,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 1.595
+      },
+      {
+        "minute": 1090,
+        "hour": 18.2,
+        "glucose_mg_dl": 118.9,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 1.3033
+      },
+      {
+        "minute": 1100,
+        "hour": 18.3,
+        "glucose_mg_dl": 120.6,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 1.0649
+      },
+      {
+        "minute": 1110,
+        "hour": 18.5,
+        "glucose_mg_dl": 122.0,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 0.8701
+      },
+      {
+        "minute": 1120,
+        "hour": 18.7,
+        "glucose_mg_dl": 123.3,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 0.711
+      },
+      {
+        "minute": 1130,
+        "hour": 18.8,
+        "glucose_mg_dl": 124.3,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 0.5809
+      },
+      {
+        "minute": 1140,
+        "hour": 19.0,
+        "glucose_mg_dl": 125.2,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 0.4747
+      },
+      {
+        "minute": 1150,
+        "hour": 19.2,
+        "glucose_mg_dl": 256.6,
+        "insulin_u_ml": 28.6,
+        "insulin_activity_x": 0.8488
+      },
+      {
+        "minute": 1160,
+        "hour": 19.3,
+        "glucose_mg_dl": 562.0,
+        "insulin_u_ml": 130.3,
+        "insulin_activity_x": 7.0035
+      },
+      {
+        "minute": 1170,
+        "hour": 19.5,
+        "glucose_mg_dl": 890.0,
+        "insulin_u_ml": 325.4,
+        "insulin_activity_x": 28.2581
+      },
+      {
+        "minute": 1180,
+        "hour": 19.7,
+        "glucose_mg_dl": 998.8,
+        "insulin_u_ml": 538.2,
+        "insulin_activity_x": 69.0217
+      },
+      {
+        "minute": 1190,
+        "hour": 19.8,
+        "glucose_mg_dl": 826.3,
+        "insulin_u_ml": 649.0,
+        "insulin_activity_x": 121.3504
+      },
+      {
+        "minute": 1200,
+        "hour": 20.0,
+        "glucose_mg_dl": 608.2,
+        "insulin_u_ml": 628.6,
+        "insulin_activity_x": 169.1842
+      },
+      {
+        "minute": 1210,
+        "hour": 20.2,
+        "glucose_mg_dl": 472.8,
+        "insulin_u_ml": 545.0,
+        "insulin_activity_x": 202.1018
+      },
+      {
+        "minute": 1220,
+        "hour": 20.3,
+        "glucose_mg_dl": 387.7,
+        "insulin_u_ml": 452.2,
+        "insulin_activity_x": 219.0622
+      },
+      {
+        "minute": 1230,
+        "hour": 20.5,
+        "glucose_mg_dl": 315.9,
+        "insulin_u_ml": 365.9,
+        "insulin_activity_x": 223.033
+      },
+      {
+        "minute": 1240,
+        "hour": 20.7,
+        "glucose_mg_dl": 241.1,
+        "insulin_u_ml": 285.1,
+        "insulin_activity_x": 217.1296
+      },
+      {
+        "minute": 1250,
+        "hour": 20.8,
+        "glucose_mg_dl": 156.1,
+        "insulin_u_ml": 205.0,
+        "insulin_activity_x": 203.5222
+      },
+      {
+        "minute": 1260,
+        "hour": 21.0,
+        "glucose_mg_dl": 56.9,
+        "insulin_u_ml": 129.0,
+        "insulin_activity_x": 183.5799
+      },
+      {
+        "minute": 1270,
+        "hour": 21.2,
+        "glucose_mg_dl": 23.4,
+        "insulin_u_ml": 81.2,
+        "insulin_activity_x": 160.3899
+      },
+      {
+        "minute": 1280,
+        "hour": 21.3,
+        "glucose_mg_dl": 22.3,
+        "insulin_u_ml": 52.7,
+        "insulin_activity_x": 137.2722
+      },
+      {
+        "minute": 1290,
+        "hour": 21.5,
+        "glucose_mg_dl": 24.7,
+        "insulin_u_ml": 35.5,
+        "insulin_activity_x": 115.8867
+      },
+      {
+        "minute": 1300,
+        "hour": 21.7,
+        "glucose_mg_dl": 27.9,
+        "insulin_u_ml": 25.3,
+        "insulin_activity_x": 96.9184
+      },
+      {
+        "minute": 1310,
+        "hour": 21.8,
+        "glucose_mg_dl": 31.7,
+        "insulin_u_ml": 19.2,
+        "insulin_activity_x": 80.5248
+      },
+      {
+        "minute": 1320,
+        "hour": 22.0,
+        "glucose_mg_dl": 35.8,
+        "insulin_u_ml": 15.5,
+        "insulin_activity_x": 66.5942
+      },
+      {
+        "minute": 1330,
+        "hour": 22.2,
+        "glucose_mg_dl": 40.4,
+        "insulin_u_ml": 13.3,
+        "insulin_activity_x": 54.8911
+      },
+      {
+        "minute": 1340,
+        "hour": 22.3,
+        "glucose_mg_dl": 45.2,
+        "insulin_u_ml": 12.0,
+        "insulin_activity_x": 45.1367
+      },
+      {
+        "minute": 1350,
+        "hour": 22.5,
+        "glucose_mg_dl": 50.4,
+        "insulin_u_ml": 11.2,
+        "insulin_activity_x": 37.0516
+      },
+      {
+        "minute": 1360,
+        "hour": 22.7,
+        "glucose_mg_dl": 55.7,
+        "insulin_u_ml": 10.7,
+        "insulin_activity_x": 30.3766
+      },
+      {
+        "minute": 1370,
+        "hour": 22.8,
+        "glucose_mg_dl": 61.1,
+        "insulin_u_ml": 10.4,
+        "insulin_activity_x": 24.8814
+      },
+      {
+        "minute": 1380,
+        "hour": 23.0,
+        "glucose_mg_dl": 66.6,
+        "insulin_u_ml": 10.3,
+        "insulin_activity_x": 20.3668
+      },
+      {
+        "minute": 1390,
+        "hour": 23.2,
+        "glucose_mg_dl": 72.0,
+        "insulin_u_ml": 10.2,
+        "insulin_activity_x": 16.6632
+      },
+      {
+        "minute": 1400,
+        "hour": 23.3,
+        "glucose_mg_dl": 77.4,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 13.6282
+      },
+      {
+        "minute": 1410,
+        "hour": 23.5,
+        "glucose_mg_dl": 82.5,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 11.1432
+      },
+      {
+        "minute": 1420,
+        "hour": 23.7,
+        "glucose_mg_dl": 87.5,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 9.1095
+      },
+      {
+        "minute": 1430,
+        "hour": 23.8,
+        "glucose_mg_dl": 92.1,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 7.446
+      }
+    ],
+    "type_2_diabetes": [
+      {
+        "minute": 0,
+        "hour": 0.0,
+        "glucose_mg_dl": 110.0,
+        "insulin_u_ml": 26.0,
+        "insulin_activity_x": 0.0
+      },
+      {
+        "minute": 10,
+        "hour": 0.2,
+        "glucose_mg_dl": 110.0,
+        "insulin_u_ml": 33.6,
+        "insulin_activity_x": 0.0804
+      },
+      {
+        "minute": 20,
+        "hour": 0.3,
+        "glucose_mg_dl": 109.8,
+        "insulin_u_ml": 38.2,
+        "insulin_activity_x": 0.2457
+      },
+      {
+        "minute": 30,
+        "hour": 0.5,
+        "glucose_mg_dl": 109.5,
+        "insulin_u_ml": 40.8,
+        "insulin_activity_x": 0.4397
+      },
+      {
+        "minute": 40,
+        "hour": 0.7,
+        "glucose_mg_dl": 109.0,
+        "insulin_u_ml": 42.3,
+        "insulin_activity_x": 0.6319
+      },
+      {
+        "minute": 50,
+        "hour": 0.8,
+        "glucose_mg_dl": 108.4,
+        "insulin_u_ml": 43.0,
+        "insulin_activity_x": 0.8065
+      },
+      {
+        "minute": 60,
+        "hour": 1.0,
+        "glucose_mg_dl": 107.8,
+        "insulin_u_ml": 43.2,
+        "insulin_activity_x": 0.9568
+      },
+      {
+        "minute": 70,
+        "hour": 1.2,
+        "glucose_mg_dl": 107.1,
+        "insulin_u_ml": 43.1,
+        "insulin_activity_x": 1.0805
+      },
+      {
+        "minute": 80,
+        "hour": 1.3,
+        "glucose_mg_dl": 106.3,
+        "insulin_u_ml": 42.8,
+        "insulin_activity_x": 1.1785
+      },
+      {
+        "minute": 90,
+        "hour": 1.5,
+        "glucose_mg_dl": 105.7,
+        "insulin_u_ml": 42.4,
+        "insulin_activity_x": 1.2529
+      },
+      {
+        "minute": 100,
+        "hour": 1.7,
+        "glucose_mg_dl": 105.0,
+        "insulin_u_ml": 41.9,
+        "insulin_activity_x": 1.3067
+      },
+      {
+        "minute": 110,
+        "hour": 1.8,
+        "glucose_mg_dl": 104.4,
+        "insulin_u_ml": 41.5,
+        "insulin_activity_x": 1.343
+      },
+      {
+        "minute": 120,
+        "hour": 2.0,
+        "glucose_mg_dl": 103.9,
+        "insulin_u_ml": 41.0,
+        "insulin_activity_x": 1.3649
+      },
+      {
+        "minute": 130,
+        "hour": 2.2,
+        "glucose_mg_dl": 103.4,
+        "insulin_u_ml": 40.6,
+        "insulin_activity_x": 1.3753
+      },
+      {
+        "minute": 140,
+        "hour": 2.3,
+        "glucose_mg_dl": 103.0,
+        "insulin_u_ml": 40.2,
+        "insulin_activity_x": 1.3768
+      },
+      {
+        "minute": 150,
+        "hour": 2.5,
+        "glucose_mg_dl": 102.7,
+        "insulin_u_ml": 39.8,
+        "insulin_activity_x": 1.3718
+      },
+      {
+        "minute": 160,
+        "hour": 2.7,
+        "glucose_mg_dl": 102.4,
+        "insulin_u_ml": 39.5,
+        "insulin_activity_x": 1.362
+      },
+      {
+        "minute": 170,
+        "hour": 2.8,
+        "glucose_mg_dl": 102.2,
+        "insulin_u_ml": 39.2,
+        "insulin_activity_x": 1.3492
+      },
+      {
+        "minute": 180,
+        "hour": 3.0,
+        "glucose_mg_dl": 102.0,
+        "insulin_u_ml": 39.0,
+        "insulin_activity_x": 1.3346
+      },
+      {
+        "minute": 190,
+        "hour": 3.2,
+        "glucose_mg_dl": 101.8,
+        "insulin_u_ml": 38.8,
+        "insulin_activity_x": 1.3192
+      },
+      {
+        "minute": 200,
+        "hour": 3.3,
+        "glucose_mg_dl": 101.7,
+        "insulin_u_ml": 38.6,
+        "insulin_activity_x": 1.3039
+      },
+      {
+        "minute": 210,
+        "hour": 3.5,
+        "glucose_mg_dl": 101.7,
+        "insulin_u_ml": 38.5,
+        "insulin_activity_x": 1.2891
+      },
+      {
+        "minute": 220,
+        "hour": 3.7,
+        "glucose_mg_dl": 101.6,
+        "insulin_u_ml": 38.4,
+        "insulin_activity_x": 1.2753
+      },
+      {
+        "minute": 230,
+        "hour": 3.8,
+        "glucose_mg_dl": 101.6,
+        "insulin_u_ml": 38.4,
+        "insulin_activity_x": 1.2627
+      },
+      {
+        "minute": 240,
+        "hour": 4.0,
+        "glucose_mg_dl": 101.6,
+        "insulin_u_ml": 38.3,
+        "insulin_activity_x": 1.2515
+      },
+      {
+        "minute": 250,
+        "hour": 4.2,
+        "glucose_mg_dl": 101.6,
+        "insulin_u_ml": 38.3,
+        "insulin_activity_x": 1.2417
+      },
+      {
+        "minute": 260,
+        "hour": 4.3,
+        "glucose_mg_dl": 101.6,
+        "insulin_u_ml": 38.3,
+        "insulin_activity_x": 1.2333
+      },
+      {
+        "minute": 270,
+        "hour": 4.5,
+        "glucose_mg_dl": 101.6,
+        "insulin_u_ml": 38.3,
+        "insulin_activity_x": 1.2263
+      },
+      {
+        "minute": 280,
+        "hour": 4.7,
+        "glucose_mg_dl": 101.6,
+        "insulin_u_ml": 38.3,
+        "insulin_activity_x": 1.2205
+      },
+      {
+        "minute": 290,
+        "hour": 4.8,
+        "glucose_mg_dl": 101.6,
+        "insulin_u_ml": 38.3,
+        "insulin_activity_x": 1.2158
+      },
+      {
+        "minute": 300,
+        "hour": 5.0,
+        "glucose_mg_dl": 101.6,
+        "insulin_u_ml": 38.3,
+        "insulin_activity_x": 1.2121
+      },
+      {
+        "minute": 310,
+        "hour": 5.2,
+        "glucose_mg_dl": 101.7,
+        "insulin_u_ml": 38.3,
+        "insulin_activity_x": 1.2093
+      },
+      {
+        "minute": 320,
+        "hour": 5.3,
+        "glucose_mg_dl": 101.7,
+        "insulin_u_ml": 38.3,
+        "insulin_activity_x": 1.2072
+      },
+      {
+        "minute": 330,
+        "hour": 5.5,
+        "glucose_mg_dl": 101.7,
+        "insulin_u_ml": 38.3,
+        "insulin_activity_x": 1.2058
+      },
+      {
+        "minute": 340,
+        "hour": 5.7,
+        "glucose_mg_dl": 101.7,
+        "insulin_u_ml": 38.3,
+        "insulin_activity_x": 1.2049
+      },
+      {
+        "minute": 350,
+        "hour": 5.8,
+        "glucose_mg_dl": 101.7,
+        "insulin_u_ml": 38.4,
+        "insulin_activity_x": 1.2043
+      },
+      {
+        "minute": 360,
+        "hour": 6.0,
+        "glucose_mg_dl": 101.8,
+        "insulin_u_ml": 38.4,
+        "insulin_activity_x": 1.2041
+      },
+      {
+        "minute": 370,
+        "hour": 6.2,
+        "glucose_mg_dl": 101.8,
+        "insulin_u_ml": 38.4,
+        "insulin_activity_x": 1.2042
+      },
+      {
+        "minute": 380,
+        "hour": 6.3,
+        "glucose_mg_dl": 101.8,
+        "insulin_u_ml": 38.4,
+        "insulin_activity_x": 1.2044
+      },
+      {
+        "minute": 390,
+        "hour": 6.5,
+        "glucose_mg_dl": 101.8,
+        "insulin_u_ml": 38.4,
+        "insulin_activity_x": 1.2047
+      },
+      {
+        "minute": 400,
+        "hour": 6.7,
+        "glucose_mg_dl": 101.8,
+        "insulin_u_ml": 38.4,
+        "insulin_activity_x": 1.2051
+      },
+      {
+        "minute": 410,
+        "hour": 6.8,
+        "glucose_mg_dl": 101.8,
+        "insulin_u_ml": 38.4,
+        "insulin_activity_x": 1.2056
+      },
+      {
+        "minute": 420,
+        "hour": 7.0,
+        "glucose_mg_dl": 101.8,
+        "insulin_u_ml": 38.4,
+        "insulin_activity_x": 1.206
+      },
+      {
+        "minute": 430,
+        "hour": 7.2,
+        "glucose_mg_dl": 183.6,
+        "insulin_u_ml": 47.5,
+        "insulin_activity_x": 1.2395
+      },
+      {
+        "minute": 440,
+        "hour": 7.3,
+        "glucose_mg_dl": 392.2,
+        "insulin_u_ml": 100.1,
+        "insulin_activity_x": 1.7095
+      },
+      {
+        "minute": 450,
+        "hour": 7.5,
+        "glucose_mg_dl": 688.5,
+        "insulin_u_ml": 213.7,
+        "insulin_activity_x": 3.4206
+      },
+      {
+        "minute": 460,
+        "hour": 7.7,
+        "glucose_mg_dl": 1016.9,
+        "insulin_u_ml": 383.7,
+        "insulin_activity_x": 7.1417
+      },
+      {
+        "minute": 470,
+        "hour": 7.8,
+        "glucose_mg_dl": 1303.0,
+        "insulin_u_ml": 586.4,
+        "insulin_activity_x": 13.2766
+      },
+      {
+        "minute": 480,
+        "hour": 8.0,
+        "glucose_mg_dl": 1469.2,
+        "insulin_u_ml": 782.5,
+        "insulin_activity_x": 21.6372
+      },
+      {
+        "minute": 490,
+        "hour": 8.2,
+        "glucose_mg_dl": 1470.2,
+        "insulin_u_ml": 927.6,
+        "insulin_activity_x": 31.3624
+      },
+      {
+        "minute": 500,
+        "hour": 8.3,
+        "glucose_mg_dl": 1319.8,
+        "insulin_u_ml": 989.7,
+        "insulin_activity_x": 41.0881
+      },
+      {
+        "minute": 510,
+        "hour": 8.5,
+        "glucose_mg_dl": 1078.5,
+        "insulin_u_ml": 962.4,
+        "insulin_activity_x": 49.3597
+      },
+      {
+        "minute": 520,
+        "hour": 8.7,
+        "glucose_mg_dl": 810.7,
+        "insulin_u_ml": 862.9,
+        "insulin_activity_x": 55.0791
+      },
+      {
+        "minute": 530,
+        "hour": 8.8,
+        "glucose_mg_dl": 553.5,
+        "insulin_u_ml": 718.5,
+        "insulin_activity_x": 57.7321
+      },
+      {
+        "minute": 540,
+        "hour": 9.0,
+        "glucose_mg_dl": 316.2,
+        "insulin_u_ml": 552.6,
+        "insulin_activity_x": 57.3312
+      },
+      {
+        "minute": 550,
+        "hour": 9.2,
+        "glucose_mg_dl": 163.3,
+        "insulin_u_ml": 387.8,
+        "insulin_activity_x": 54.2357
+      },
+      {
+        "minute": 560,
+        "hour": 9.3,
+        "glucose_mg_dl": 93.9,
+        "insulin_u_ml": 254.9,
+        "insulin_activity_x": 49.2131
+      },
+      {
+        "minute": 570,
+        "hour": 9.5,
+        "glucose_mg_dl": 62.4,
+        "insulin_u_ml": 163.0,
+        "insulin_activity_x": 43.2292
+      },
+      {
+        "minute": 580,
+        "hour": 9.7,
+        "glucose_mg_dl": 48.3,
+        "insulin_u_ml": 107.6,
+        "insulin_activity_x": 37.1295
+      },
+      {
+        "minute": 590,
+        "hour": 9.8,
+        "glucose_mg_dl": 42.4,
+        "insulin_u_ml": 74.5,
+        "insulin_activity_x": 31.4201
+      },
+      {
+        "minute": 600,
+        "hour": 10.0,
+        "glucose_mg_dl": 40.6,
+        "insulin_u_ml": 54.6,
+        "insulin_activity_x": 26.3207
+      },
+      {
+        "minute": 610,
+        "hour": 10.2,
+        "glucose_mg_dl": 41.2,
+        "insulin_u_ml": 42.7,
+        "insulin_activity_x": 21.894
+      },
+      {
+        "minute": 620,
+        "hour": 10.3,
+        "glucose_mg_dl": 42.9,
+        "insulin_u_ml": 35.6,
+        "insulin_activity_x": 18.1214
+      },
+      {
+        "minute": 630,
+        "hour": 10.5,
+        "glucose_mg_dl": 45.5,
+        "insulin_u_ml": 31.4,
+        "insulin_activity_x": 14.9456
+      },
+      {
+        "minute": 640,
+        "hour": 10.7,
+        "glucose_mg_dl": 48.6,
+        "insulin_u_ml": 28.8,
+        "insulin_activity_x": 12.2949
+      },
+      {
+        "minute": 650,
+        "hour": 10.8,
+        "glucose_mg_dl": 51.9,
+        "insulin_u_ml": 27.3,
+        "insulin_activity_x": 10.0957
+      },
+      {
+        "minute": 660,
+        "hour": 11.0,
+        "glucose_mg_dl": 55.5,
+        "insulin_u_ml": 26.4,
+        "insulin_activity_x": 8.2788
+      },
+      {
+        "minute": 670,
+        "hour": 11.2,
+        "glucose_mg_dl": 59.1,
+        "insulin_u_ml": 25.8,
+        "insulin_activity_x": 6.7823
+      },
+      {
+        "minute": 680,
+        "hour": 11.3,
+        "glucose_mg_dl": 62.7,
+        "insulin_u_ml": 25.5,
+        "insulin_activity_x": 5.5523
+      },
+      {
+        "minute": 690,
+        "hour": 11.5,
+        "glucose_mg_dl": 66.3,
+        "insulin_u_ml": 25.3,
+        "insulin_activity_x": 4.5431
+      },
+      {
+        "minute": 700,
+        "hour": 11.7,
+        "glucose_mg_dl": 69.8,
+        "insulin_u_ml": 25.2,
+        "insulin_activity_x": 3.7158
+      },
+      {
+        "minute": 710,
+        "hour": 11.8,
+        "glucose_mg_dl": 73.2,
+        "insulin_u_ml": 25.1,
+        "insulin_activity_x": 3.0384
+      },
+      {
+        "minute": 720,
+        "hour": 12.0,
+        "glucose_mg_dl": 76.4,
+        "insulin_u_ml": 25.1,
+        "insulin_activity_x": 2.484
+      },
+      {
+        "minute": 730,
+        "hour": 12.2,
+        "glucose_mg_dl": 188.2,
+        "insulin_u_ml": 35.2,
+        "insulin_activity_x": 2.0613
+      },
+      {
+        "minute": 740,
+        "hour": 12.3,
+        "glucose_mg_dl": 468.0,
+        "insulin_u_ml": 104.6,
+        "insulin_activity_x": 2.2801
+      },
+      {
+        "minute": 750,
+        "hour": 12.5,
+        "glucose_mg_dl": 863.0,
+        "insulin_u_ml": 255.8,
+        "insulin_activity_x": 4.2207
+      },
+      {
+        "minute": 760,
+        "hour": 12.7,
+        "glucose_mg_dl": 1294.1,
+        "insulin_u_ml": 481.5,
+        "insulin_activity_x": 8.8973
+      },
+      {
+        "minute": 770,
+        "hour": 12.8,
+        "glucose_mg_dl": 1650.7,
+        "insulin_u_ml": 746.5,
+        "insulin_activity_x": 16.8025
+      },
+      {
+        "minute": 780,
+        "hour": 13.0,
+        "glucose_mg_dl": 1821.3,
+        "insulin_u_ml": 992.7,
+        "insulin_activity_x": 27.5699
+      },
+      {
+        "minute": 790,
+        "hour": 13.2,
+        "glucose_mg_dl": 1757.4,
+        "insulin_u_ml": 1157.8,
+        "insulin_activity_x": 39.8733
+      },
+      {
+        "minute": 800,
+        "hour": 13.3,
+        "glucose_mg_dl": 1509.5,
+        "insulin_u_ml": 1204.5,
+        "insulin_activity_x": 51.7576
+      },
+      {
+        "minute": 810,
+        "hour": 13.5,
+        "glucose_mg_dl": 1181.9,
+        "insulin_u_ml": 1137.5,
+        "insulin_activity_x": 61.3307
+      },
+      {
+        "minute": 820,
+        "hour": 13.7,
+        "glucose_mg_dl": 857.1,
+        "insulin_u_ml": 991.2,
+        "insulin_activity_x": 67.3837
+      },
+      {
+        "minute": 830,
+        "hour": 13.8,
+        "glucose_mg_dl": 564.9,
+        "insulin_u_ml": 804.3,
+        "insulin_activity_x": 69.5616
+      },
+      {
+        "minute": 840,
+        "hour": 14.0,
+        "glucose_mg_dl": 300.8,
+        "insulin_u_ml": 603.4,
+        "insulin_activity_x": 68.1304
+      },
+      {
+        "minute": 850,
+        "hour": 14.2,
+        "glucose_mg_dl": 140.4,
+        "insulin_u_ml": 411.3,
+        "insulin_activity_x": 63.6714
+      },
+      {
+        "minute": 860,
+        "hour": 14.3,
+        "glucose_mg_dl": 75.7,
+        "insulin_u_ml": 262.6,
+        "insulin_activity_x": 57.1729
+      },
+      {
+        "minute": 870,
+        "hour": 14.5,
+        "glucose_mg_dl": 49.4,
+        "insulin_u_ml": 167.2,
+        "insulin_activity_x": 49.8266
+      },
+      {
+        "minute": 880,
+        "hour": 14.7,
+        "glucose_mg_dl": 38.9,
+        "insulin_u_ml": 110.2,
+        "insulin_activity_x": 42.5754
+      },
+      {
+        "minute": 890,
+        "hour": 14.8,
+        "glucose_mg_dl": 35.2,
+        "insulin_u_ml": 76.0,
+        "insulin_activity_x": 35.9028
+      },
+      {
+        "minute": 900,
+        "hour": 15.0,
+        "glucose_mg_dl": 34.9,
+        "insulin_u_ml": 55.5,
+        "insulin_activity_x": 30.0032
+      },
+      {
+        "minute": 910,
+        "hour": 15.2,
+        "glucose_mg_dl": 36.3,
+        "insulin_u_ml": 43.3,
+        "insulin_activity_x": 24.9148
+      },
+      {
+        "minute": 920,
+        "hour": 15.3,
+        "glucose_mg_dl": 38.7,
+        "insulin_u_ml": 35.9,
+        "insulin_activity_x": 20.5967
+      },
+      {
+        "minute": 930,
+        "hour": 15.5,
+        "glucose_mg_dl": 41.6,
+        "insulin_u_ml": 31.6,
+        "insulin_activity_x": 16.9723
+      },
+      {
+        "minute": 940,
+        "hour": 15.7,
+        "glucose_mg_dl": 45.0,
+        "insulin_u_ml": 28.9,
+        "insulin_activity_x": 13.9535
+      },
+      {
+        "minute": 950,
+        "hour": 15.8,
+        "glucose_mg_dl": 48.5,
+        "insulin_u_ml": 27.3,
+        "insulin_activity_x": 11.4524
+      },
+      {
+        "minute": 960,
+        "hour": 16.0,
+        "glucose_mg_dl": 52.2,
+        "insulin_u_ml": 26.4,
+        "insulin_activity_x": 9.3882
+      },
+      {
+        "minute": 970,
+        "hour": 16.2,
+        "glucose_mg_dl": 56.0,
+        "insulin_u_ml": 25.8,
+        "insulin_activity_x": 7.6893
+      },
+      {
+        "minute": 980,
+        "hour": 16.3,
+        "glucose_mg_dl": 59.8,
+        "insulin_u_ml": 25.5,
+        "insulin_activity_x": 6.2937
+      },
+      {
+        "minute": 990,
+        "hour": 16.5,
+        "glucose_mg_dl": 63.5,
+        "insulin_u_ml": 25.3,
+        "insulin_activity_x": 5.1491
+      },
+      {
+        "minute": 1000,
+        "hour": 16.7,
+        "glucose_mg_dl": 67.2,
+        "insulin_u_ml": 25.2,
+        "insulin_activity_x": 4.2111
+      },
+      {
+        "minute": 1010,
+        "hour": 16.8,
+        "glucose_mg_dl": 70.7,
+        "insulin_u_ml": 25.1,
+        "insulin_activity_x": 3.4431
+      },
+      {
+        "minute": 1020,
+        "hour": 17.0,
+        "glucose_mg_dl": 74.1,
+        "insulin_u_ml": 25.1,
+        "insulin_activity_x": 2.8147
+      },
+      {
+        "minute": 1030,
+        "hour": 17.2,
+        "glucose_mg_dl": 77.3,
+        "insulin_u_ml": 25.0,
+        "insulin_activity_x": 2.3007
+      },
+      {
+        "minute": 1040,
+        "hour": 17.3,
+        "glucose_mg_dl": 80.4,
+        "insulin_u_ml": 25.0,
+        "insulin_activity_x": 1.8803
+      },
+      {
+        "minute": 1050,
+        "hour": 17.5,
+        "glucose_mg_dl": 83.2,
+        "insulin_u_ml": 25.0,
+        "insulin_activity_x": 1.5367
+      },
+      {
+        "minute": 1060,
+        "hour": 17.7,
+        "glucose_mg_dl": 85.9,
+        "insulin_u_ml": 25.0,
+        "insulin_activity_x": 1.2558
+      },
+      {
+        "minute": 1070,
+        "hour": 17.8,
+        "glucose_mg_dl": 88.3,
+        "insulin_u_ml": 25.7,
+        "insulin_activity_x": 1.031
+      },
+      {
+        "minute": 1080,
+        "hour": 18.0,
+        "glucose_mg_dl": 90.6,
+        "insulin_u_ml": 26.8,
+        "insulin_activity_x": 0.8622
+      },
+      {
+        "minute": 1090,
+        "hour": 18.2,
+        "glucose_mg_dl": 92.6,
+        "insulin_u_ml": 28.2,
+        "insulin_activity_x": 0.7453
+      },
+      {
+        "minute": 1100,
+        "hour": 18.3,
+        "glucose_mg_dl": 94.4,
+        "insulin_u_ml": 29.7,
+        "insulin_activity_x": 0.673
+      },
+      {
+        "minute": 1110,
+        "hour": 18.5,
+        "glucose_mg_dl": 96.0,
+        "insulin_u_ml": 31.1,
+        "insulin_activity_x": 0.6376
+      },
+      {
+        "minute": 1120,
+        "hour": 18.7,
+        "glucose_mg_dl": 97.4,
+        "insulin_u_ml": 32.4,
+        "insulin_activity_x": 0.6314
+      },
+      {
+        "minute": 1130,
+        "hour": 18.8,
+        "glucose_mg_dl": 98.6,
+        "insulin_u_ml": 33.6,
+        "insulin_activity_x": 0.6472
+      },
+      {
+        "minute": 1140,
+        "hour": 19.0,
+        "glucose_mg_dl": 99.6,
+        "insulin_u_ml": 34.7,
+        "insulin_activity_x": 0.679
+      },
+      {
+        "minute": 1150,
+        "hour": 19.2,
+        "glucose_mg_dl": 236.9,
+        "insulin_u_ml": 50.7,
+        "insulin_activity_x": 0.7766
+      },
+      {
+        "minute": 1160,
+        "hour": 19.3,
+        "glucose_mg_dl": 586.0,
+        "insulin_u_ml": 139.4,
+        "insulin_activity_x": 1.6094
+      },
+      {
+        "minute": 1170,
+        "hour": 19.5,
+        "glucose_mg_dl": 1077.4,
+        "insulin_u_ml": 329.4,
+        "insulin_activity_x": 4.5171
+      },
+      {
+        "minute": 1180,
+        "hour": 19.7,
+        "glucose_mg_dl": 1600.6,
+        "insulin_u_ml": 609.6,
+        "insulin_activity_x": 10.7556
+      },
+      {
+        "minute": 1190,
+        "hour": 19.8,
+        "glucose_mg_dl": 2000.7,
+        "insulin_u_ml": 930.3,
+        "insulin_activity_x": 20.8711
+      },
+      {
+        "minute": 1200,
+        "hour": 20.0,
+        "glucose_mg_dl": 2136.0,
+        "insulin_u_ml": 1211.7,
+        "insulin_activity_x": 34.2341
+      },
+      {
+        "minute": 1210,
+        "hour": 20.2,
+        "glucose_mg_dl": 1976.3,
+        "insulin_u_ml": 1375.7,
+        "insulin_activity_x": 48.969
+      },
+      {
+        "minute": 1220,
+        "hour": 20.3,
+        "glucose_mg_dl": 1627.7,
+        "insulin_u_ml": 1388.8,
+        "insulin_activity_x": 62.5523
+      },
+      {
+        "minute": 1230,
+        "hour": 20.5,
+        "glucose_mg_dl": 1234.5,
+        "insulin_u_ml": 1274.3,
+        "insulin_activity_x": 72.8238
+      },
+      {
+        "minute": 1240,
+        "hour": 20.7,
+        "glucose_mg_dl": 877.7,
+        "insulin_u_ml": 1084.3,
+        "insulin_activity_x": 78.6782
+      },
+      {
+        "minute": 1250,
+        "hour": 20.8,
+        "glucose_mg_dl": 568.3,
+        "insulin_u_ml": 863.7,
+        "insulin_activity_x": 80.0502
+      },
+      {
+        "minute": 1260,
+        "hour": 21.0,
+        "glucose_mg_dl": 286.8,
+        "insulin_u_ml": 637.4,
+        "insulin_activity_x": 77.476
+      },
+      {
+        "minute": 1270,
+        "hour": 21.2,
+        "glucose_mg_dl": 122.8,
+        "insulin_u_ml": 426.1,
+        "insulin_activity_x": 71.7087
+      },
+      {
+        "minute": 1280,
+        "hour": 21.3,
+        "glucose_mg_dl": 63.0,
+        "insulin_u_ml": 268.1,
+        "insulin_activity_x": 63.893
+      },
+      {
+        "minute": 1290,
+        "hour": 21.5,
+        "glucose_mg_dl": 40.9,
+        "insulin_u_ml": 170.5,
+        "insulin_activity_x": 55.3897
+      },
+      {
+        "minute": 1300,
+        "hour": 21.7,
+        "glucose_mg_dl": 32.9,
+        "insulin_u_ml": 112.1,
+        "insulin_activity_x": 47.164
+      },
+      {
+        "minute": 1310,
+        "hour": 21.8,
+        "glucose_mg_dl": 30.8,
+        "insulin_u_ml": 77.2,
+        "insulin_activity_x": 39.678
+      },
+      {
+        "minute": 1320,
+        "hour": 22.0,
+        "glucose_mg_dl": 31.4,
+        "insulin_u_ml": 56.2,
+        "insulin_activity_x": 33.1033
+      },
+      {
+        "minute": 1330,
+        "hour": 22.2,
+        "glucose_mg_dl": 33.3,
+        "insulin_u_ml": 43.7,
+        "insulin_activity_x": 27.4571
+      },
+      {
+        "minute": 1340,
+        "hour": 22.3,
+        "glucose_mg_dl": 35.9,
+        "insulin_u_ml": 36.2,
+        "insulin_activity_x": 22.6794
+      },
+      {
+        "minute": 1350,
+        "hour": 22.5,
+        "glucose_mg_dl": 39.1,
+        "insulin_u_ml": 31.7,
+        "insulin_activity_x": 18.6775
+      },
+      {
+        "minute": 1360,
+        "hour": 22.7,
+        "glucose_mg_dl": 42.5,
+        "insulin_u_ml": 29.0,
+        "insulin_activity_x": 15.3487
+      },
+      {
+        "minute": 1370,
+        "hour": 22.8,
+        "glucose_mg_dl": 46.2,
+        "insulin_u_ml": 27.4,
+        "insulin_activity_x": 12.5936
+      },
+      {
+        "minute": 1380,
+        "hour": 23.0,
+        "glucose_mg_dl": 50.0,
+        "insulin_u_ml": 26.4,
+        "insulin_activity_x": 10.3214
+      },
+      {
+        "minute": 1390,
+        "hour": 23.2,
+        "glucose_mg_dl": 53.9,
+        "insulin_u_ml": 25.9,
+        "insulin_activity_x": 8.4522
+      },
+      {
+        "minute": 1400,
+        "hour": 23.3,
+        "glucose_mg_dl": 57.7,
+        "insulin_u_ml": 25.5,
+        "insulin_activity_x": 6.9173
+      },
+      {
+        "minute": 1410,
+        "hour": 23.5,
+        "glucose_mg_dl": 61.5,
+        "insulin_u_ml": 25.3,
+        "insulin_activity_x": 5.6587
+      },
+      {
+        "minute": 1420,
+        "hour": 23.7,
+        "glucose_mg_dl": 65.3,
+        "insulin_u_ml": 25.2,
+        "insulin_activity_x": 4.6276
+      },
+      {
+        "minute": 1430,
+        "hour": 23.8,
+        "glucose_mg_dl": 68.9,
+        "insulin_u_ml": 25.1,
+        "insulin_activity_x": 3.7835
+      }
+    ],
+    "type_1_lada": [
+      {
+        "minute": 0,
+        "hour": 0.0,
+        "glucose_mg_dl": 140.0,
+        "insulin_u_ml": 4.4,
+        "insulin_activity_x": 0.0
+      },
+      {
+        "minute": 10,
+        "hour": 0.2,
+        "glucose_mg_dl": 139.9,
+        "insulin_u_ml": 7.3,
+        "insulin_activity_x": 0.2063
+      },
+      {
+        "minute": 20,
+        "hour": 0.3,
+        "glucose_mg_dl": 139.5,
+        "insulin_u_ml": 9.1,
+        "insulin_activity_x": 0.6305
+      },
+      {
+        "minute": 30,
+        "hour": 0.5,
+        "glucose_mg_dl": 138.5,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 1.1274
+      },
+      {
+        "minute": 40,
+        "hour": 0.7,
+        "glucose_mg_dl": 137.3,
+        "insulin_u_ml": 10.6,
+        "insulin_activity_x": 1.618
+      },
+      {
+        "minute": 50,
+        "hour": 0.8,
+        "glucose_mg_dl": 135.8,
+        "insulin_u_ml": 10.9,
+        "insulin_activity_x": 2.0618
+      },
+      {
+        "minute": 60,
+        "hour": 1.0,
+        "glucose_mg_dl": 134.2,
+        "insulin_u_ml": 10.9,
+        "insulin_activity_x": 2.4411
+      },
+      {
+        "minute": 70,
+        "hour": 1.2,
+        "glucose_mg_dl": 132.7,
+        "insulin_u_ml": 10.9,
+        "insulin_activity_x": 2.7516
+      },
+      {
+        "minute": 80,
+        "hour": 1.3,
+        "glucose_mg_dl": 131.3,
+        "insulin_u_ml": 10.8,
+        "insulin_activity_x": 2.9962
+      },
+      {
+        "minute": 90,
+        "hour": 1.5,
+        "glucose_mg_dl": 130.1,
+        "insulin_u_ml": 10.6,
+        "insulin_activity_x": 3.182
+      },
+      {
+        "minute": 100,
+        "hour": 1.7,
+        "glucose_mg_dl": 129.0,
+        "insulin_u_ml": 10.5,
+        "insulin_activity_x": 3.3175
+      },
+      {
+        "minute": 110,
+        "hour": 1.8,
+        "glucose_mg_dl": 128.1,
+        "insulin_u_ml": 10.3,
+        "insulin_activity_x": 3.4118
+      },
+      {
+        "minute": 120,
+        "hour": 2.0,
+        "glucose_mg_dl": 127.4,
+        "insulin_u_ml": 10.2,
+        "insulin_activity_x": 3.4736
+      },
+      {
+        "minute": 130,
+        "hour": 2.2,
+        "glucose_mg_dl": 126.8,
+        "insulin_u_ml": 10.1,
+        "insulin_activity_x": 3.5103
+      },
+      {
+        "minute": 140,
+        "hour": 2.3,
+        "glucose_mg_dl": 126.4,
+        "insulin_u_ml": 10.0,
+        "insulin_activity_x": 3.5285
+      },
+      {
+        "minute": 150,
+        "hour": 2.5,
+        "glucose_mg_dl": 126.0,
+        "insulin_u_ml": 9.9,
+        "insulin_activity_x": 3.5336
+      },
+      {
+        "minute": 160,
+        "hour": 2.7,
+        "glucose_mg_dl": 125.8,
+        "insulin_u_ml": 9.8,
+        "insulin_activity_x": 3.5299
+      },
+      {
+        "minute": 170,
+        "hour": 2.8,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.8,
+        "insulin_activity_x": 3.5208
+      },
+      {
+        "minute": 180,
+        "hour": 3.0,
+        "glucose_mg_dl": 125.6,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.5086
+      },
+      {
+        "minute": 190,
+        "hour": 3.2,
+        "glucose_mg_dl": 125.5,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4953
+      },
+      {
+        "minute": 200,
+        "hour": 3.3,
+        "glucose_mg_dl": 125.5,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4819
+      },
+      {
+        "minute": 210,
+        "hour": 3.5,
+        "glucose_mg_dl": 125.5,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4694
+      },
+      {
+        "minute": 220,
+        "hour": 3.7,
+        "glucose_mg_dl": 125.5,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4582
+      },
+      {
+        "minute": 230,
+        "hour": 3.8,
+        "glucose_mg_dl": 125.5,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4485
+      },
+      {
+        "minute": 240,
+        "hour": 4.0,
+        "glucose_mg_dl": 125.5,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4403
+      },
+      {
+        "minute": 250,
+        "hour": 4.2,
+        "glucose_mg_dl": 125.5,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4337
+      },
+      {
+        "minute": 260,
+        "hour": 4.3,
+        "glucose_mg_dl": 125.6,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4284
+      },
+      {
+        "minute": 270,
+        "hour": 4.5,
+        "glucose_mg_dl": 125.6,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4243
+      },
+      {
+        "minute": 280,
+        "hour": 4.7,
+        "glucose_mg_dl": 125.6,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4213
+      },
+      {
+        "minute": 290,
+        "hour": 4.8,
+        "glucose_mg_dl": 125.6,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4191
+      },
+      {
+        "minute": 300,
+        "hour": 5.0,
+        "glucose_mg_dl": 125.6,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4175
+      },
+      {
+        "minute": 310,
+        "hour": 5.2,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4165
+      },
+      {
+        "minute": 320,
+        "hour": 5.3,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4159
+      },
+      {
+        "minute": 330,
+        "hour": 5.5,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4156
+      },
+      {
+        "minute": 340,
+        "hour": 5.7,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4156
+      },
+      {
+        "minute": 350,
+        "hour": 5.8,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4156
+      },
+      {
+        "minute": 360,
+        "hour": 6.0,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4158
+      },
+      {
+        "minute": 370,
+        "hour": 6.2,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4159
+      },
+      {
+        "minute": 380,
+        "hour": 6.3,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4162
+      },
+      {
+        "minute": 390,
+        "hour": 6.5,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4164
+      },
+      {
+        "minute": 400,
+        "hour": 6.7,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4166
+      },
+      {
+        "minute": 410,
+        "hour": 6.8,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4167
+      },
+      {
+        "minute": 420,
+        "hour": 7.0,
+        "glucose_mg_dl": 125.7,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.4169
+      },
+      {
+        "minute": 430,
+        "hour": 7.2,
+        "glucose_mg_dl": 203.4,
+        "insulin_u_ml": 11.2,
+        "insulin_activity_x": 3.4546
+      },
+      {
+        "minute": 440,
+        "hour": 7.3,
+        "glucose_mg_dl": 387.6,
+        "insulin_u_ml": 19.7,
+        "insulin_activity_x": 3.97
+      },
+      {
+        "minute": 450,
+        "hour": 7.5,
+        "glucose_mg_dl": 628.7,
+        "insulin_u_ml": 36.9,
+        "insulin_activity_x": 5.7707
+      },
+      {
+        "minute": 460,
+        "hour": 7.7,
+        "glucose_mg_dl": 873.2,
+        "insulin_u_ml": 61.1,
+        "insulin_activity_x": 9.5197
+      },
+      {
+        "minute": 470,
+        "hour": 7.8,
+        "glucose_mg_dl": 1064.3,
+        "insulin_u_ml": 88.1,
+        "insulin_activity_x": 15.431
+      },
+      {
+        "minute": 480,
+        "hour": 8.0,
+        "glucose_mg_dl": 1155.9,
+        "insulin_u_ml": 112.5,
+        "insulin_activity_x": 23.1401
+      },
+      {
+        "minute": 490,
+        "hour": 8.2,
+        "glucose_mg_dl": 1132.3,
+        "insulin_u_ml": 129.0,
+        "insulin_activity_x": 31.7476
+      },
+      {
+        "minute": 500,
+        "hour": 8.3,
+        "glucose_mg_dl": 1013.4,
+        "insulin_u_ml": 134.7,
+        "insulin_activity_x": 40.0549
+      },
+      {
+        "minute": 510,
+        "hour": 8.5,
+        "glucose_mg_dl": 838.9,
+        "insulin_u_ml": 129.8,
+        "insulin_activity_x": 46.9128
+      },
+      {
+        "minute": 520,
+        "hour": 8.7,
+        "glucose_mg_dl": 644.2,
+        "insulin_u_ml": 116.3,
+        "insulin_activity_x": 51.5098
+      },
+      {
+        "minute": 530,
+        "hour": 8.8,
+        "glucose_mg_dl": 448.9,
+        "insulin_u_ml": 97.2,
+        "insulin_activity_x": 53.4755
+      },
+      {
+        "minute": 540,
+        "hour": 9.0,
+        "glucose_mg_dl": 258.6,
+        "insulin_u_ml": 75.0,
+        "insulin_activity_x": 52.8074
+      },
+      {
+        "minute": 550,
+        "hour": 9.2,
+        "glucose_mg_dl": 139.9,
+        "insulin_u_ml": 52.5,
+        "insulin_activity_x": 49.7596
+      },
+      {
+        "minute": 560,
+        "hour": 9.3,
+        "glucose_mg_dl": 92.4,
+        "insulin_u_ml": 34.6,
+        "insulin_activity_x": 45.0099
+      },
+      {
+        "minute": 570,
+        "hour": 9.5,
+        "glucose_mg_dl": 74.3,
+        "insulin_u_ml": 22.4,
+        "insulin_activity_x": 39.4557
+      },
+      {
+        "minute": 580,
+        "hour": 9.7,
+        "glucose_mg_dl": 68.7,
+        "insulin_u_ml": 15.0,
+        "insulin_activity_x": 33.8435
+      },
+      {
+        "minute": 590,
+        "hour": 9.8,
+        "glucose_mg_dl": 68.7,
+        "insulin_u_ml": 10.6,
+        "insulin_activity_x": 28.6137
+      },
+      {
+        "minute": 600,
+        "hour": 10.0,
+        "glucose_mg_dl": 71.3,
+        "insulin_u_ml": 7.9,
+        "insulin_activity_x": 23.955
+      },
+      {
+        "minute": 610,
+        "hour": 10.2,
+        "glucose_mg_dl": 75.3,
+        "insulin_u_ml": 6.4,
+        "insulin_activity_x": 19.9175
+      },
+      {
+        "minute": 620,
+        "hour": 10.3,
+        "glucose_mg_dl": 79.9,
+        "insulin_u_ml": 5.4,
+        "insulin_activity_x": 16.4803
+      },
+      {
+        "minute": 630,
+        "hour": 10.5,
+        "glucose_mg_dl": 84.9,
+        "insulin_u_ml": 4.8,
+        "insulin_activity_x": 13.5892
+      },
+      {
+        "minute": 640,
+        "hour": 10.7,
+        "glucose_mg_dl": 89.9,
+        "insulin_u_ml": 4.6,
+        "insulin_activity_x": 11.1814
+      },
+      {
+        "minute": 650,
+        "hour": 10.8,
+        "glucose_mg_dl": 94.8,
+        "insulin_u_ml": 4.8,
+        "insulin_activity_x": 9.2116
+      },
+      {
+        "minute": 660,
+        "hour": 11.0,
+        "glucose_mg_dl": 99.5,
+        "insulin_u_ml": 5.2,
+        "insulin_activity_x": 7.6308
+      },
+      {
+        "minute": 670,
+        "hour": 11.2,
+        "glucose_mg_dl": 103.9,
+        "insulin_u_ml": 5.6,
+        "insulin_activity_x": 6.3856
+      },
+      {
+        "minute": 680,
+        "hour": 11.3,
+        "glucose_mg_dl": 107.9,
+        "insulin_u_ml": 6.2,
+        "insulin_activity_x": 5.423
+      },
+      {
+        "minute": 690,
+        "hour": 11.5,
+        "glucose_mg_dl": 111.5,
+        "insulin_u_ml": 6.7,
+        "insulin_activity_x": 4.6942
+      },
+      {
+        "minute": 700,
+        "hour": 11.7,
+        "glucose_mg_dl": 114.6,
+        "insulin_u_ml": 7.2,
+        "insulin_activity_x": 4.1553
+      },
+      {
+        "minute": 710,
+        "hour": 11.8,
+        "glucose_mg_dl": 117.3,
+        "insulin_u_ml": 7.6,
+        "insulin_activity_x": 3.7682
+      },
+      {
+        "minute": 720,
+        "hour": 12.0,
+        "glucose_mg_dl": 119.5,
+        "insulin_u_ml": 8.1,
+        "insulin_activity_x": 3.5002
+      },
+      {
+        "minute": 730,
+        "hour": 12.2,
+        "glucose_mg_dl": 225.0,
+        "insulin_u_ml": 10.5,
+        "insulin_activity_x": 3.3741
+      },
+      {
+        "minute": 740,
+        "hour": 12.3,
+        "glucose_mg_dl": 472.1,
+        "insulin_u_ml": 22.0,
+        "insulin_activity_x": 3.9541
+      },
+      {
+        "minute": 750,
+        "hour": 12.5,
+        "glucose_mg_dl": 793.7,
+        "insulin_u_ml": 45.3,
+        "insulin_activity_x": 6.299
+      },
+      {
+        "minute": 760,
+        "hour": 12.7,
+        "glucose_mg_dl": 1113.2,
+        "insulin_u_ml": 77.6,
+        "insulin_activity_x": 11.2698
+      },
+      {
+        "minute": 770,
+        "hour": 12.8,
+        "glucose_mg_dl": 1347.0,
+        "insulin_u_ml": 112.9,
+        "insulin_activity_x": 19.098
+      },
+      {
+        "minute": 780,
+        "hour": 13.0,
+        "glucose_mg_dl": 1432.0,
+        "insulin_u_ml": 143.2,
+        "insulin_activity_x": 29.1885
+      },
+      {
+        "minute": 790,
+        "hour": 13.2,
+        "glucose_mg_dl": 1359.2,
+        "insulin_u_ml": 161.7,
+        "insulin_activity_x": 40.2046
+      },
+      {
+        "minute": 800,
+        "hour": 13.3,
+        "glucose_mg_dl": 1174.4,
+        "insulin_u_ml": 165.2,
+        "insulin_activity_x": 50.4751
+      },
+      {
+        "minute": 810,
+        "hour": 13.5,
+        "glucose_mg_dl": 941.1,
+        "insulin_u_ml": 155.4,
+        "insulin_activity_x": 58.5412
+      },
+      {
+        "minute": 820,
+        "hour": 13.7,
+        "glucose_mg_dl": 702.7,
+        "insulin_u_ml": 136.1,
+        "insulin_activity_x": 63.5272
+      },
+      {
+        "minute": 830,
+        "hour": 13.8,
+        "glucose_mg_dl": 474.3,
+        "insulin_u_ml": 111.4,
+        "insulin_activity_x": 65.1768
+      },
+      {
+        "minute": 840,
+        "hour": 14.0,
+        "glucose_mg_dl": 254.6,
+        "insulin_u_ml": 84.1,
+        "insulin_activity_x": 63.6615
+      },
+      {
+        "minute": 850,
+        "hour": 14.2,
+        "glucose_mg_dl": 125.4,
+        "insulin_u_ml": 57.3,
+        "insulin_activity_x": 59.3957
+      },
+      {
+        "minute": 860,
+        "hour": 14.3,
+        "glucose_mg_dl": 79.6,
+        "insulin_u_ml": 36.7,
+        "insulin_activity_x": 53.2596
+      },
+      {
+        "minute": 870,
+        "hour": 14.5,
+        "glucose_mg_dl": 64.4,
+        "insulin_u_ml": 23.6,
+        "insulin_activity_x": 46.3739
+      },
+      {
+        "minute": 880,
+        "hour": 14.7,
+        "glucose_mg_dl": 60.8,
+        "insulin_u_ml": 15.7,
+        "insulin_activity_x": 39.6014
+      },
+      {
+        "minute": 890,
+        "hour": 14.8,
+        "glucose_mg_dl": 62.0,
+        "insulin_u_ml": 11.0,
+        "insulin_activity_x": 33.3814
+      },
+      {
+        "minute": 900,
+        "hour": 15.0,
+        "glucose_mg_dl": 65.4,
+        "insulin_u_ml": 8.2,
+        "insulin_activity_x": 27.8882
+      },
+      {
+        "minute": 910,
+        "hour": 15.2,
+        "glucose_mg_dl": 69.9,
+        "insulin_u_ml": 6.5,
+        "insulin_activity_x": 23.1538
+      },
+      {
+        "minute": 920,
+        "hour": 15.3,
+        "glucose_mg_dl": 74.9,
+        "insulin_u_ml": 5.5,
+        "insulin_activity_x": 19.1382
+      },
+      {
+        "minute": 930,
+        "hour": 15.5,
+        "glucose_mg_dl": 80.2,
+        "insulin_u_ml": 4.9,
+        "insulin_activity_x": 15.7689
+      },
+      {
+        "minute": 940,
+        "hour": 15.7,
+        "glucose_mg_dl": 85.5,
+        "insulin_u_ml": 4.5,
+        "insulin_activity_x": 12.9632
+      },
+      {
+        "minute": 950,
+        "hour": 15.8,
+        "glucose_mg_dl": 90.7,
+        "insulin_u_ml": 4.5,
+        "insulin_activity_x": 10.6452
+      },
+      {
+        "minute": 960,
+        "hour": 16.0,
+        "glucose_mg_dl": 95.7,
+        "insulin_u_ml": 4.8,
+        "insulin_activity_x": 8.7636
+      },
+      {
+        "minute": 970,
+        "hour": 16.2,
+        "glucose_mg_dl": 100.5,
+        "insulin_u_ml": 5.2,
+        "insulin_activity_x": 7.2647
+      },
+      {
+        "minute": 980,
+        "hour": 16.3,
+        "glucose_mg_dl": 104.9,
+        "insulin_u_ml": 5.7,
+        "insulin_activity_x": 6.0922
+      },
+      {
+        "minute": 990,
+        "hour": 16.5,
+        "glucose_mg_dl": 108.8,
+        "insulin_u_ml": 6.2,
+        "insulin_activity_x": 5.1926
+      },
+      {
+        "minute": 1000,
+        "hour": 16.7,
+        "glucose_mg_dl": 112.3,
+        "insulin_u_ml": 6.8,
+        "insulin_activity_x": 4.5171
+      },
+      {
+        "minute": 1010,
+        "hour": 16.8,
+        "glucose_mg_dl": 115.3,
+        "insulin_u_ml": 7.3,
+        "insulin_activity_x": 4.0223
+      },
+      {
+        "minute": 1020,
+        "hour": 17.0,
+        "glucose_mg_dl": 117.9,
+        "insulin_u_ml": 7.7,
+        "insulin_activity_x": 3.6711
+      },
+      {
+        "minute": 1030,
+        "hour": 17.2,
+        "glucose_mg_dl": 120.0,
+        "insulin_u_ml": 8.1,
+        "insulin_activity_x": 3.4317
+      },
+      {
+        "minute": 1040,
+        "hour": 17.3,
+        "glucose_mg_dl": 121.7,
+        "insulin_u_ml": 8.5,
+        "insulin_activity_x": 3.2779
+      },
+      {
+        "minute": 1050,
+        "hour": 17.5,
+        "glucose_mg_dl": 123.0,
+        "insulin_u_ml": 8.8,
+        "insulin_activity_x": 3.1877
+      },
+      {
+        "minute": 1060,
+        "hour": 17.7,
+        "glucose_mg_dl": 124.1,
+        "insulin_u_ml": 9.0,
+        "insulin_activity_x": 3.1438
+      },
+      {
+        "minute": 1070,
+        "hour": 17.8,
+        "glucose_mg_dl": 124.8,
+        "insulin_u_ml": 9.2,
+        "insulin_activity_x": 3.1321
+      },
+      {
+        "minute": 1080,
+        "hour": 18.0,
+        "glucose_mg_dl": 125.4,
+        "insulin_u_ml": 9.4,
+        "insulin_activity_x": 3.1419
+      },
+      {
+        "minute": 1090,
+        "hour": 18.2,
+        "glucose_mg_dl": 125.8,
+        "insulin_u_ml": 9.5,
+        "insulin_activity_x": 3.1648
+      },
+      {
+        "minute": 1100,
+        "hour": 18.3,
+        "glucose_mg_dl": 126.0,
+        "insulin_u_ml": 9.6,
+        "insulin_activity_x": 3.195
+      },
+      {
+        "minute": 1110,
+        "hour": 18.5,
+        "glucose_mg_dl": 126.1,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.2279
+      },
+      {
+        "minute": 1120,
+        "hour": 18.7,
+        "glucose_mg_dl": 126.2,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.2606
+      },
+      {
+        "minute": 1130,
+        "hour": 18.8,
+        "glucose_mg_dl": 126.2,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.2912
+      },
+      {
+        "minute": 1140,
+        "hour": 19.0,
+        "glucose_mg_dl": 126.2,
+        "insulin_u_ml": 9.7,
+        "insulin_activity_x": 3.3186
+      },
+      {
+        "minute": 1150,
+        "hour": 19.2,
+        "glucose_mg_dl": 255.8,
+        "insulin_u_ml": 12.3,
+        "insulin_activity_x": 3.4049
+      },
+      {
+        "minute": 1160,
+        "hour": 19.3,
+        "glucose_mg_dl": 562.3,
+        "insulin_u_ml": 26.4,
+        "insulin_activity_x": 4.2837
+      },
+      {
+        "minute": 1170,
+        "hour": 19.5,
+        "glucose_mg_dl": 959.6,
+        "insulin_u_ml": 55.0,
+        "insulin_activity_x": 7.2982
+      },
+      {
+        "minute": 1180,
+        "hour": 19.7,
+        "glucose_mg_dl": 1345.3,
+        "insulin_u_ml": 94.7,
+        "insulin_activity_x": 13.523
+      },
+      {
+        "minute": 1190,
+        "hour": 19.8,
+        "glucose_mg_dl": 1607.8,
+        "insulin_u_ml": 137.2,
+        "insulin_activity_x": 23.1987
+      },
+      {
+        "minute": 1200,
+        "hour": 20.0,
+        "glucose_mg_dl": 1670.7,
+        "insulin_u_ml": 172.0,
+        "insulin_activity_x": 35.4723
+      },
+      {
+        "minute": 1210,
+        "hour": 20.2,
+        "glucose_mg_dl": 1540.6,
+        "insulin_u_ml": 190.9,
+        "insulin_activity_x": 48.5591
+      },
+      {
+        "minute": 1220,
+        "hour": 20.3,
+        "glucose_mg_dl": 1294.5,
+        "insulin_u_ml": 191.2,
+        "insulin_activity_x": 60.3617
+      },
+      {
+        "minute": 1230,
+        "hour": 20.5,
+        "glucose_mg_dl": 1015.3,
+        "insulin_u_ml": 176.3,
+        "insulin_activity_x": 69.2145
+      },
+      {
+        "minute": 1240,
+        "hour": 20.7,
+        "glucose_mg_dl": 746.2,
+        "insulin_u_ml": 151.9,
+        "insulin_activity_x": 74.2769
+      },
+      {
+        "minute": 1250,
+        "hour": 20.8,
+        "glucose_mg_dl": 494.1,
+        "insulin_u_ml": 122.7,
+        "insulin_activity_x": 75.4533
+      },
+      {
+        "minute": 1260,
+        "hour": 21.0,
+        "glucose_mg_dl": 250.7,
+        "insulin_u_ml": 91.3,
+        "insulin_activity_x": 73.0798
+      },
+      {
+        "minute": 1270,
+        "hour": 21.2,
+        "glucose_mg_dl": 113.9,
+        "insulin_u_ml": 61.1,
+        "insulin_activity_x": 67.6943
+      },
+      {
+        "minute": 1280,
+        "hour": 21.3,
+        "glucose_mg_dl": 70.4,
+        "insulin_u_ml": 38.6,
+        "insulin_activity_x": 60.3376
+      },
+      {
+        "minute": 1290,
+        "hour": 21.5,
+        "glucose_mg_dl": 57.5,
+        "insulin_u_ml": 24.7,
+        "insulin_activity_x": 52.319
+      },
+      {
+        "minute": 1300,
+        "hour": 21.7,
+        "glucose_mg_dl": 55.3,
+        "insulin_u_ml": 16.4,
+        "insulin_activity_x": 44.5559
+      },
+      {
+        "minute": 1310,
+        "hour": 21.8,
+        "glucose_mg_dl": 57.4,
+        "insulin_u_ml": 11.4,
+        "insulin_activity_x": 37.4876
+      },
+      {
+        "minute": 1320,
+        "hour": 22.0,
+        "glucose_mg_dl": 61.3,
+        "insulin_u_ml": 8.4,
+        "insulin_activity_x": 31.2781
+      },
+      {
+        "minute": 1330,
+        "hour": 22.2,
+        "glucose_mg_dl": 66.0,
+        "insulin_u_ml": 6.7,
+        "insulin_activity_x": 25.9444
+      },
+      {
+        "minute": 1340,
+        "hour": 22.3,
+        "glucose_mg_dl": 71.2,
+        "insulin_u_ml": 5.6,
+        "insulin_activity_x": 21.4308
+      },
+      {
+        "minute": 1350,
+        "hour": 22.5,
+        "glucose_mg_dl": 76.7,
+        "insulin_u_ml": 5.0,
+        "insulin_activity_x": 17.6496
+      },
+      {
+        "minute": 1360,
+        "hour": 22.7,
+        "glucose_mg_dl": 82.1,
+        "insulin_u_ml": 4.6,
+        "insulin_activity_x": 14.5042
+      },
+      {
+        "minute": 1370,
+        "hour": 22.8,
+        "glucose_mg_dl": 87.5,
+        "insulin_u_ml": 4.4,
+        "insulin_activity_x": 11.9012
+      },
+      {
+        "minute": 1380,
+        "hour": 23.0,
+        "glucose_mg_dl": 92.8,
+        "insulin_u_ml": 4.5,
+        "insulin_activity_x": 9.7695
+      },
+      {
+        "minute": 1390,
+        "hour": 23.2,
+        "glucose_mg_dl": 97.7,
+        "insulin_u_ml": 4.9,
+        "insulin_activity_x": 8.056
+      },
+      {
+        "minute": 1400,
+        "hour": 23.3,
+        "glucose_mg_dl": 102.4,
+        "insulin_u_ml": 5.4,
+        "insulin_activity_x": 6.7035
+      },
+      {
+        "minute": 1410,
+        "hour": 23.5,
+        "glucose_mg_dl": 106.6,
+        "insulin_u_ml": 5.9,
+        "insulin_activity_x": 5.6557
+      },
+      {
+        "minute": 1420,
+        "hour": 23.7,
+        "glucose_mg_dl": 110.4,
+        "insulin_u_ml": 6.5,
+        "insulin_activity_x": 4.8599
+      },
+      {
+        "minute": 1430,
+        "hour": 23.8,
+        "glucose_mg_dl": 113.7,
+        "insulin_u_ml": 7.0,
+        "insulin_activity_x": 4.2693
+      }
+    ]
+  }
+}
