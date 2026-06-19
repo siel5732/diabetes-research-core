@@ -1,0 +1,290 @@
+{
+  "Late-Onset Autoimmune Diabetes (LADA/Type 1.5)": [
+    {
+      "year": 0,
+      "beta_cell_mass_mg": 998.39,
+      "mean_glucose_mg_dl": 180.32,
+      "replication_rate_daily": 0.0007,
+      "apoptosis_rate_daily": 0.00231
+    },
+    {
+      "year": 1,
+      "beta_cell_mass_mg": 98.54,
+      "mean_glucose_mg_dl": 360.29,
+      "replication_rate_daily": 0.00075,
+      "apoptosis_rate_daily": 0.0122
+    },
+    {
+      "year": 2,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 378.0,
+      "replication_rate_daily": 0.00075,
+      "apoptosis_rate_daily": 0.01339
+    },
+    {
+      "year": 3,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 378.0,
+      "replication_rate_daily": 0.00075,
+      "apoptosis_rate_daily": 0.01339
+    },
+    {
+      "year": 4,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 378.0,
+      "replication_rate_daily": 0.00075,
+      "apoptosis_rate_daily": 0.01339
+    },
+    {
+      "year": 5,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 378.0,
+      "replication_rate_daily": 0.00075,
+      "apoptosis_rate_daily": 0.01339
+    },
+    {
+      "year": 6,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 378.0,
+      "replication_rate_daily": 0.00075,
+      "apoptosis_rate_daily": 0.01339
+    },
+    {
+      "year": 7,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 378.0,
+      "replication_rate_daily": 0.00075,
+      "apoptosis_rate_daily": 0.01339
+    },
+    {
+      "year": 8,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 378.0,
+      "replication_rate_daily": 0.00075,
+      "apoptosis_rate_daily": 0.01339
+    },
+    {
+      "year": 9,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 378.0,
+      "replication_rate_daily": 0.00075,
+      "apoptosis_rate_daily": 0.01339
+    }
+  ],
+  "Classic Type 2 Diabetes (Severe Insulin Resistance)": [
+    {
+      "year": 0,
+      "beta_cell_mass_mg": 998.32,
+      "mean_glucose_mg_dl": 210.34,
+      "replication_rate_daily": 0.0018,
+      "apoptosis_rate_daily": 0.003479
+    },
+    {
+      "year": 1,
+      "beta_cell_mass_mg": 62.71,
+      "mean_glucose_mg_dl": 397.46,
+      "replication_rate_daily": 0.0018,
+      "apoptosis_rate_daily": 0.014792
+    },
+    {
+      "year": 2,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 408.0,
+      "replication_rate_daily": 0.0018,
+      "apoptosis_rate_daily": 0.01554
+    },
+    {
+      "year": 3,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 408.0,
+      "replication_rate_daily": 0.0018,
+      "apoptosis_rate_daily": 0.01554
+    },
+    {
+      "year": 4,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 408.0,
+      "replication_rate_daily": 0.0018,
+      "apoptosis_rate_daily": 0.01554
+    },
+    {
+      "year": 5,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 408.0,
+      "replication_rate_daily": 0.00024,
+      "apoptosis_rate_daily": 0.01554
+    },
+    {
+      "year": 6,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 408.0,
+      "replication_rate_daily": 0.00024,
+      "apoptosis_rate_daily": 0.01554
+    },
+    {
+      "year": 7,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 408.0,
+      "replication_rate_daily": 0.00024,
+      "apoptosis_rate_daily": 0.01554
+    },
+    {
+      "year": 8,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 408.0,
+      "replication_rate_daily": 0.00024,
+      "apoptosis_rate_daily": 0.01554
+    },
+    {
+      "year": 9,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 408.0,
+      "replication_rate_daily": 0.00024,
+      "apoptosis_rate_daily": 0.01554
+    }
+  ],
+  "Untreated MODY3 (HNF1A Transcriptional Defect)": [
+    {
+      "year": 0,
+      "beta_cell_mass_mg": 997.6,
+      "mean_glucose_mg_dl": 195.48,
+      "replication_rate_daily": 0.0006,
+      "apoptosis_rate_daily": 0.003004
+    },
+    {
+      "year": 1,
+      "beta_cell_mass_mg": 37.23,
+      "mean_glucose_mg_dl": 387.55,
+      "replication_rate_daily": 0.0006,
+      "apoptosis_rate_daily": 0.014456
+    },
+    {
+      "year": 2,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 393.0,
+      "replication_rate_daily": 0.0006,
+      "apoptosis_rate_daily": 0.014841
+    },
+    {
+      "year": 3,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 393.0,
+      "replication_rate_daily": 0.0006,
+      "apoptosis_rate_daily": 0.014841
+    },
+    {
+      "year": 4,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 393.0,
+      "replication_rate_daily": 0.0006,
+      "apoptosis_rate_daily": 0.014841
+    },
+    {
+      "year": 5,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 393.0,
+      "replication_rate_daily": 0.0006,
+      "apoptosis_rate_daily": 0.014841
+    },
+    {
+      "year": 6,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 393.0,
+      "replication_rate_daily": 0.0006,
+      "apoptosis_rate_daily": 0.014841
+    },
+    {
+      "year": 7,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 393.0,
+      "replication_rate_daily": 0.0006,
+      "apoptosis_rate_daily": 0.014841
+    },
+    {
+      "year": 8,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 393.0,
+      "replication_rate_daily": 0.0006,
+      "apoptosis_rate_daily": 0.014841
+    },
+    {
+      "year": 9,
+      "beta_cell_mass_mg": 10.0,
+      "mean_glucose_mg_dl": 393.0,
+      "replication_rate_daily": 0.0006,
+      "apoptosis_rate_daily": 0.014841
+    }
+  ],
+  "Precision-Treated MODY3 (Low-Dose Sulfonylureas)": [
+    {
+      "year": 0,
+      "beta_cell_mass_mg": 999.9,
+      "mean_glucose_mg_dl": 95.0,
+      "replication_rate_daily": 0.0004,
+      "apoptosis_rate_daily": 0.0005
+    },
+    {
+      "year": 1,
+      "beta_cell_mass_mg": 964.06,
+      "mean_glucose_mg_dl": 95.0,
+      "replication_rate_daily": 0.0004,
+      "apoptosis_rate_daily": 0.0005
+    },
+    {
+      "year": 2,
+      "beta_cell_mass_mg": 929.5,
+      "mean_glucose_mg_dl": 95.0,
+      "replication_rate_daily": 0.0004,
+      "apoptosis_rate_daily": 0.0005
+    },
+    {
+      "year": 3,
+      "beta_cell_mass_mg": 896.19,
+      "mean_glucose_mg_dl": 95.0,
+      "replication_rate_daily": 0.0004,
+      "apoptosis_rate_daily": 0.0005
+    },
+    {
+      "year": 4,
+      "beta_cell_mass_mg": 864.06,
+      "mean_glucose_mg_dl": 95.0,
+      "replication_rate_daily": 0.0004,
+      "apoptosis_rate_daily": 0.0005
+    },
+    {
+      "year": 5,
+      "beta_cell_mass_mg": 833.09,
+      "mean_glucose_mg_dl": 95.0,
+      "replication_rate_daily": 0.0004,
+      "apoptosis_rate_daily": 0.0005
+    },
+    {
+      "year": 6,
+      "beta_cell_mass_mg": 803.23,
+      "mean_glucose_mg_dl": 95.0,
+      "replication_rate_daily": 0.0004,
+      "apoptosis_rate_daily": 0.0005
+    },
+    {
+      "year": 7,
+      "beta_cell_mass_mg": 774.44,
+      "mean_glucose_mg_dl": 95.0,
+      "replication_rate_daily": 0.0004,
+      "apoptosis_rate_daily": 0.0005
+    },
+    {
+      "year": 8,
+      "beta_cell_mass_mg": 746.68,
+      "mean_glucose_mg_dl": 95.0,
+      "replication_rate_daily": 0.0004,
+      "apoptosis_rate_daily": 0.0005
+    },
+    {
+      "year": 9,
+      "beta_cell_mass_mg": 719.92,
+      "mean_glucose_mg_dl": 95.0,
+      "replication_rate_daily": 0.0004,
+      "apoptosis_rate_daily": 0.0005
+    }
+  ]
+}
