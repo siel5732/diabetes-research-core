@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Sielaff"
+    given-names: "Zachary"
+    affiliation: "AcutisForge Precision Endocrinology & Metabolic Initiative"
+  - family-names: "St.Acutis"
+    given-names: "Acutis"
+    affiliation: "AcutisForge Systems Group"
+title: "Diabetes-Research-Core: Open-Source Mathematical Metabolism and Islet Encapsulation Models for Monogenic Diabetes"
+version: 1.0.0
+date-released: 2026-06-19
+url: "https://github.com/siel5732/diabetes-research-core"
+keywords:
+  - "monogenic-diabetes"
+  - "mody"
+  - "mody2"
+  - "mody3"
+  - "glucokinase"
+  - "islet-encapsulation"
+  - "genetic-algorithms"
+  - "insulin-kinetics"
+  - "model-predictive-control"
+  - "pancreatic-beta-cells"
