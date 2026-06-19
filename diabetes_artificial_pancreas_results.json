@@ -1,0 +1,342 @@
+{
+  "Reactive Closed-Loop PID Control": [
+    {
+      "hour": 0,
+      "blood_glucose_mg_dl": 120.0,
+      "active_insulin_remote": 0.0,
+      "plasma_insulin_uu_ml": 15.66,
+      "infusion_rate_uu_min": 3.3
+    },
+    {
+      "hour": 1,
+      "blood_glucose_mg_dl": 119.8,
+      "active_insulin_remote": 0.0316,
+      "plasma_insulin_uu_ml": 19.37,
+      "infusion_rate_uu_min": 0.36
+    },
+    {
+      "hour": 2,
+      "blood_glucose_mg_dl": 119.6,
+      "active_insulin_remote": 0.112,
+      "plasma_insulin_uu_ml": 23.36,
+      "infusion_rate_uu_min": 0.41
+    },
+    {
+      "hour": 3,
+      "blood_glucose_mg_dl": 119.4,
+      "active_insulin_remote": 0.2434,
+      "plasma_insulin_uu_ml": 27.62,
+      "infusion_rate_uu_min": 0.47
+    },
+    {
+      "hour": 4,
+      "blood_glucose_mg_dl": 119.1,
+      "active_insulin_remote": 0.4275,
+      "plasma_insulin_uu_ml": 32.09,
+      "infusion_rate_uu_min": 0.52
+    },
+    {
+      "hour": 5,
+      "blood_glucose_mg_dl": 215.3,
+      "active_insulin_remote": 0.6991,
+      "plasma_insulin_uu_ml": 45.87,
+      "infusion_rate_uu_min": 2.46
+    },
+    {
+      "hour": 6,
+      "blood_glucose_mg_dl": 307.5,
+      "active_insulin_remote": 1.2964,
+      "plasma_insulin_uu_ml": 82.9,
+      "infusion_rate_uu_min": 4.04
+    },
+    {
+      "hour": 7,
+      "blood_glucose_mg_dl": 304.9,
+      "active_insulin_remote": 2.4058,
+      "plasma_insulin_uu_ml": 125.86,
+      "infusion_rate_uu_min": 4.6
+    },
+    {
+      "hour": 8,
+      "blood_glucose_mg_dl": 301.9,
+      "active_insulin_remote": 4.0556,
+      "plasma_insulin_uu_ml": 171.27,
+      "infusion_rate_uu_min": 5.17
+    },
+    {
+      "hour": 9,
+      "blood_glucose_mg_dl": 298.4,
+      "active_insulin_remote": 6.2611,
+      "plasma_insulin_uu_ml": 218.71,
+      "infusion_rate_uu_min": 5.71
+    },
+    {
+      "hour": 10,
+      "blood_glucose_mg_dl": 290.6,
+      "active_insulin_remote": 9.0318,
+      "plasma_insulin_uu_ml": 267.74,
+      "infusion_rate_uu_min": 6.24
+    },
+    {
+      "hour": 11,
+      "blood_glucose_mg_dl": 137.8,
+      "active_insulin_remote": 12.2689,
+      "plasma_insulin_uu_ml": 297.68,
+      "infusion_rate_uu_min": 3.99
+    },
+    {
+      "hour": 12,
+      "blood_glucose_mg_dl": 135.5,
+      "active_insulin_remote": 15.7345,
+      "plasma_insulin_uu_ml": 319.37,
+      "infusion_rate_uu_min": 4.29
+    },
+    {
+      "hour": 13,
+      "blood_glucose_mg_dl": 132.8,
+      "active_insulin_remote": 19.3855,
+      "plasma_insulin_uu_ml": 339.82,
+      "infusion_rate_uu_min": 4.35
+    },
+    {
+      "hour": 14,
+      "blood_glucose_mg_dl": 129.7,
+      "active_insulin_remote": 23.2006,
+      "plasma_insulin_uu_ml": 358.93,
+      "infusion_rate_uu_min": 4.4
+    },
+    {
+      "hour": 15,
+      "blood_glucose_mg_dl": 126.2,
+      "active_insulin_remote": 27.1582,
+      "plasma_insulin_uu_ml": 376.67,
+      "infusion_rate_uu_min": 4.43
+    },
+    {
+      "hour": 16,
+      "blood_glucose_mg_dl": 122.4,
+      "active_insulin_remote": 31.2368,
+      "plasma_insulin_uu_ml": 392.97,
+      "infusion_rate_uu_min": 4.45
+    },
+    {
+      "hour": 17,
+      "blood_glucose_mg_dl": 118.2,
+      "active_insulin_remote": 35.4146,
+      "plasma_insulin_uu_ml": 407.78,
+      "infusion_rate_uu_min": 4.44
+    },
+    {
+      "hour": 18,
+      "blood_glucose_mg_dl": 113.7,
+      "active_insulin_remote": 39.6697,
+      "plasma_insulin_uu_ml": 421.05,
+      "infusion_rate_uu_min": 4.42
+    },
+    {
+      "hour": 19,
+      "blood_glucose_mg_dl": 108.9,
+      "active_insulin_remote": 43.98,
+      "plasma_insulin_uu_ml": 432.71,
+      "infusion_rate_uu_min": 4.38
+    },
+    {
+      "hour": 20,
+      "blood_glucose_mg_dl": 103.9,
+      "active_insulin_remote": 48.3233,
+      "plasma_insulin_uu_ml": 442.73,
+      "infusion_rate_uu_min": 4.33
+    },
+    {
+      "hour": 21,
+      "blood_glucose_mg_dl": 98.8,
+      "active_insulin_remote": 52.6772,
+      "plasma_insulin_uu_ml": 451.05,
+      "infusion_rate_uu_min": 4.26
+    },
+    {
+      "hour": 22,
+      "blood_glucose_mg_dl": 93.6,
+      "active_insulin_remote": 57.0196,
+      "plasma_insulin_uu_ml": 457.65,
+      "infusion_rate_uu_min": 4.17
+    },
+    {
+      "hour": 23,
+      "blood_glucose_mg_dl": 88.3,
+      "active_insulin_remote": 61.3283,
+      "plasma_insulin_uu_ml": 462.49,
+      "infusion_rate_uu_min": 4.06
+    }
+  ],
+  "Proactive Model Predictive Control (MPC)": [
+    {
+      "hour": 0,
+      "blood_glucose_mg_dl": 120.0,
+      "active_insulin_remote": 0.0,
+      "plasma_insulin_uu_ml": 15.09,
+      "infusion_rate_uu_min": 0.44
+    },
+    {
+      "hour": 1,
+      "blood_glucose_mg_dl": 119.8,
+      "active_insulin_remote": 0.0334,
+      "plasma_insulin_uu_ml": 20.09,
+      "infusion_rate_uu_min": 0.44
+    },
+    {
+      "hour": 2,
+      "blood_glucose_mg_dl": 119.6,
+      "active_insulin_remote": 0.1271,
+      "plasma_insulin_uu_ml": 24.6,
+      "infusion_rate_uu_min": 0.44
+    },
+    {
+      "hour": 3,
+      "blood_glucose_mg_dl": 119.4,
+      "active_insulin_remote": 0.2733,
+      "plasma_insulin_uu_ml": 28.64,
+      "infusion_rate_uu_min": 0.43
+    },
+    {
+      "hour": 4,
+      "blood_glucose_mg_dl": 119.1,
+      "active_insulin_remote": 0.4861,
+      "plasma_insulin_uu_ml": 45.13,
+      "infusion_rate_uu_min": 4.5
+    },
+    {
+      "hour": 5,
+      "blood_glucose_mg_dl": 215.2,
+      "active_insulin_remote": 0.9723,
+      "plasma_insulin_uu_ml": 58.68,
+      "infusion_rate_uu_min": 1.55
+    },
+    {
+      "hour": 6,
+      "blood_glucose_mg_dl": 307.4,
+      "active_insulin_remote": 1.6366,
+      "plasma_insulin_uu_ml": 80.76,
+      "infusion_rate_uu_min": 2.69
+    },
+    {
+      "hour": 7,
+      "blood_glucose_mg_dl": 304.7,
+      "active_insulin_remote": 2.5975,
+      "plasma_insulin_uu_ml": 105.04,
+      "infusion_rate_uu_min": 2.66
+    },
+    {
+      "hour": 8,
+      "blood_glucose_mg_dl": 301.7,
+      "active_insulin_remote": 3.8292,
+      "plasma_insulin_uu_ml": 126.61,
+      "infusion_rate_uu_min": 2.62
+    },
+    {
+      "hour": 9,
+      "blood_glucose_mg_dl": 298.3,
+      "active_insulin_remote": 5.2915,
+      "plasma_insulin_uu_ml": 145.7,
+      "infusion_rate_uu_min": 2.58
+    },
+    {
+      "hour": 10,
+      "blood_glucose_mg_dl": 291.0,
+      "active_insulin_remote": 6.9349,
+      "plasma_insulin_uu_ml": 154.45,
+      "infusion_rate_uu_min": 0.0
+    },
+    {
+      "hour": 11,
+      "blood_glucose_mg_dl": 138.4,
+      "active_insulin_remote": 8.4729,
+      "plasma_insulin_uu_ml": 143.65,
+      "infusion_rate_uu_min": 0.68
+    },
+    {
+      "hour": 12,
+      "blood_glucose_mg_dl": 136.8,
+      "active_insulin_remote": 9.8849,
+      "plasma_insulin_uu_ml": 138.84,
+      "infusion_rate_uu_min": 0.64
+    },
+    {
+      "hour": 13,
+      "blood_glucose_mg_dl": 135.0,
+      "active_insulin_remote": 11.2017,
+      "plasma_insulin_uu_ml": 134.25,
+      "infusion_rate_uu_min": 0.62
+    },
+    {
+      "hour": 14,
+      "blood_glucose_mg_dl": 133.0,
+      "active_insulin_remote": 12.4282,
+      "plasma_insulin_uu_ml": 129.84,
+      "infusion_rate_uu_min": 0.6
+    },
+    {
+      "hour": 15,
+      "blood_glucose_mg_dl": 131.0,
+      "active_insulin_remote": 13.5689,
+      "plasma_insulin_uu_ml": 125.58,
+      "infusion_rate_uu_min": 0.57
+    },
+    {
+      "hour": 16,
+      "blood_glucose_mg_dl": 128.9,
+      "active_insulin_remote": 14.6275,
+      "plasma_insulin_uu_ml": 121.44,
+      "infusion_rate_uu_min": 0.55
+    },
+    {
+      "hour": 17,
+      "blood_glucose_mg_dl": 126.7,
+      "active_insulin_remote": 15.6074,
+      "plasma_insulin_uu_ml": 117.4,
+      "infusion_rate_uu_min": 0.52
+    },
+    {
+      "hour": 18,
+      "blood_glucose_mg_dl": 124.4,
+      "active_insulin_remote": 16.5117,
+      "plasma_insulin_uu_ml": 113.43,
+      "infusion_rate_uu_min": 0.49
+    },
+    {
+      "hour": 19,
+      "blood_glucose_mg_dl": 122.1,
+      "active_insulin_remote": 17.3432,
+      "plasma_insulin_uu_ml": 109.53,
+      "infusion_rate_uu_min": 0.47
+    },
+    {
+      "hour": 20,
+      "blood_glucose_mg_dl": 119.7,
+      "active_insulin_remote": 18.1043,
+      "plasma_insulin_uu_ml": 105.68,
+      "infusion_rate_uu_min": 0.44
+    },
+    {
+      "hour": 21,
+      "blood_glucose_mg_dl": 117.3,
+      "active_insulin_remote": 18.7975,
+      "plasma_insulin_uu_ml": 101.87,
+      "infusion_rate_uu_min": 0.41
+    },
+    {
+      "hour": 22,
+      "blood_glucose_mg_dl": 115.0,
+      "active_insulin_remote": 19.4249,
+      "plasma_insulin_uu_ml": 98.1,
+      "infusion_rate_uu_min": 0.38
+    },
+    {
+      "hour": 23,
+      "blood_glucose_mg_dl": 112.6,
+      "active_insulin_remote": 19.9885,
+      "plasma_insulin_uu_ml": 94.36,
+      "infusion_rate_uu_min": 0.35
+    }
+  ]
+}
