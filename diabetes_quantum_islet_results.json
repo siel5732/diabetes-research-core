@@ -1,0 +1,13 @@
+{
+  "winner": {
+    "lattice_id": 521,
+    "pore_radius_nm": 6.2,
+    "membrane_thickness_um": 35.0,
+    "gel_crosslinking_pct": 2.4,
+    "oxygen_diffusion_rate_cm2_s": 1.6e-05,
+    "igg_blocking_efficiency_pct": 100.0,
+    "insulin_transmission_pct": 94.5
+  },
+  "iterations": 25,
+  "confidence": 0.9994612447444547
+}
