@@ -1,0 +1,222 @@
+{
+  "GLP-1 Receptor Agonist (Semaglutide)": [
+    {
+      "week": 1,
+      "agonist_concentration_nm": 15.0,
+      "glp1_receptor_occupancy_pct": 0.0,
+      "gip_receptor_occupancy_pct": 0.0,
+      "gastric_emptying_delay_pct": 0.0,
+      "satiety_index": 0.0,
+      "weight_loss_pct": 0.0
+    },
+    {
+      "week": 2,
+      "agonist_concentration_nm": 22.5,
+      "glp1_receptor_occupancy_pct": 95.2,
+      "gip_receptor_occupancy_pct": 0.1,
+      "gastric_emptying_delay_pct": 37.3,
+      "satiety_index": 6.1,
+      "weight_loss_pct": 0.48
+    },
+    {
+      "week": 3,
+      "agonist_concentration_nm": 26.2,
+      "glp1_receptor_occupancy_pct": 96.7,
+      "gip_receptor_occupancy_pct": 0.1,
+      "gastric_emptying_delay_pct": 38.8,
+      "satiety_index": 6.3,
+      "weight_loss_pct": 1.14
+    },
+    {
+      "week": 4,
+      "agonist_concentration_nm": 28.1,
+      "glp1_receptor_occupancy_pct": 97.2,
+      "gip_receptor_occupancy_pct": 0.1,
+      "gastric_emptying_delay_pct": 39.0,
+      "satiety_index": 6.3,
+      "weight_loss_pct": 1.8
+    },
+    {
+      "week": 5,
+      "agonist_concentration_nm": 29.0,
+      "glp1_receptor_occupancy_pct": 97.4,
+      "gip_receptor_occupancy_pct": 0.1,
+      "gastric_emptying_delay_pct": 39.1,
+      "satiety_index": 6.4,
+      "weight_loss_pct": 2.47
+    },
+    {
+      "week": 6,
+      "agonist_concentration_nm": 29.4,
+      "glp1_receptor_occupancy_pct": 97.5,
+      "gip_receptor_occupancy_pct": 0.1,
+      "gastric_emptying_delay_pct": 39.1,
+      "satiety_index": 6.4,
+      "weight_loss_pct": 3.14
+    },
+    {
+      "week": 7,
+      "agonist_concentration_nm": 29.7,
+      "glp1_receptor_occupancy_pct": 97.5,
+      "gip_receptor_occupancy_pct": 0.1,
+      "gastric_emptying_delay_pct": 39.1,
+      "satiety_index": 6.4,
+      "weight_loss_pct": 3.81
+    },
+    {
+      "week": 8,
+      "agonist_concentration_nm": 29.8,
+      "glp1_receptor_occupancy_pct": 97.5,
+      "gip_receptor_occupancy_pct": 0.1,
+      "gastric_emptying_delay_pct": 39.1,
+      "satiety_index": 6.4,
+      "weight_loss_pct": 4.48
+    },
+    {
+      "week": 9,
+      "agonist_concentration_nm": 29.8,
+      "glp1_receptor_occupancy_pct": 97.5,
+      "gip_receptor_occupancy_pct": 0.1,
+      "gastric_emptying_delay_pct": 39.2,
+      "satiety_index": 6.4,
+      "weight_loss_pct": 5.15
+    },
+    {
+      "week": 10,
+      "agonist_concentration_nm": 29.9,
+      "glp1_receptor_occupancy_pct": 97.5,
+      "gip_receptor_occupancy_pct": 0.1,
+      "gastric_emptying_delay_pct": 39.2,
+      "satiety_index": 6.4,
+      "weight_loss_pct": 5.82
+    },
+    {
+      "week": 11,
+      "agonist_concentration_nm": 29.9,
+      "glp1_receptor_occupancy_pct": 97.5,
+      "gip_receptor_occupancy_pct": 0.2,
+      "gastric_emptying_delay_pct": 39.2,
+      "satiety_index": 6.4,
+      "weight_loss_pct": 6.49
+    },
+    {
+      "week": 12,
+      "agonist_concentration_nm": 29.9,
+      "glp1_receptor_occupancy_pct": 97.5,
+      "gip_receptor_occupancy_pct": 0.2,
+      "gastric_emptying_delay_pct": 39.2,
+      "satiety_index": 6.4,
+      "weight_loss_pct": 7.16
+    }
+  ],
+  "Dual GIP/GLP-1 Co-Agonist (Tirzepatide)": [
+    {
+      "week": 1,
+      "agonist_concentration_nm": 15.0,
+      "glp1_receptor_occupancy_pct": 0.0,
+      "gip_receptor_occupancy_pct": 0.0,
+      "gastric_emptying_delay_pct": 0.0,
+      "satiety_index": 0.0,
+      "weight_loss_pct": 0.0
+    },
+    {
+      "week": 2,
+      "agonist_concentration_nm": 20.6,
+      "glp1_receptor_occupancy_pct": 93.2,
+      "gip_receptor_occupancy_pct": 97.6,
+      "gastric_emptying_delay_pct": 50.5,
+      "satiety_index": 8.9,
+      "weight_loss_pct": 0.7
+    },
+    {
+      "week": 3,
+      "agonist_concentration_nm": 22.8,
+      "glp1_receptor_occupancy_pct": 94.9,
+      "gip_receptor_occupancy_pct": 98.3,
+      "gastric_emptying_delay_pct": 52.7,
+      "satiety_index": 9.2,
+      "weight_loss_pct": 1.66
+    },
+    {
+      "week": 4,
+      "agonist_concentration_nm": 23.6,
+      "glp1_receptor_occupancy_pct": 95.4,
+      "gip_receptor_occupancy_pct": 98.4,
+      "gastric_emptying_delay_pct": 52.9,
+      "satiety_index": 9.2,
+      "weight_loss_pct": 2.64
+    },
+    {
+      "week": 5,
+      "agonist_concentration_nm": 23.9,
+      "glp1_receptor_occupancy_pct": 95.5,
+      "gip_receptor_occupancy_pct": 98.5,
+      "gastric_emptying_delay_pct": 53.0,
+      "satiety_index": 9.2,
+      "weight_loss_pct": 3.61
+    },
+    {
+      "week": 6,
+      "agonist_concentration_nm": 24.0,
+      "glp1_receptor_occupancy_pct": 95.6,
+      "gip_receptor_occupancy_pct": 98.5,
+      "gastric_emptying_delay_pct": 53.0,
+      "satiety_index": 9.2,
+      "weight_loss_pct": 4.59
+    },
+    {
+      "week": 7,
+      "agonist_concentration_nm": 24.0,
+      "glp1_receptor_occupancy_pct": 95.6,
+      "gip_receptor_occupancy_pct": 98.5,
+      "gastric_emptying_delay_pct": 53.0,
+      "satiety_index": 9.3,
+      "weight_loss_pct": 5.56
+    },
+    {
+      "week": 8,
+      "agonist_concentration_nm": 24.0,
+      "glp1_receptor_occupancy_pct": 95.6,
+      "gip_receptor_occupancy_pct": 98.5,
+      "gastric_emptying_delay_pct": 53.0,
+      "satiety_index": 9.3,
+      "weight_loss_pct": 6.54
+    },
+    {
+      "week": 9,
+      "agonist_concentration_nm": 24.0,
+      "glp1_receptor_occupancy_pct": 95.6,
+      "gip_receptor_occupancy_pct": 98.5,
+      "gastric_emptying_delay_pct": 53.0,
+      "satiety_index": 9.3,
+      "weight_loss_pct": 7.52
+    },
+    {
+      "week": 10,
+      "agonist_concentration_nm": 24.1,
+      "glp1_receptor_occupancy_pct": 95.6,
+      "gip_receptor_occupancy_pct": 98.5,
+      "gastric_emptying_delay_pct": 53.0,
+      "satiety_index": 9.3,
+      "weight_loss_pct": 8.49
+    },
+    {
+      "week": 11,
+      "agonist_concentration_nm": 24.1,
+      "glp1_receptor_occupancy_pct": 95.6,
+      "gip_receptor_occupancy_pct": 98.5,
+      "gastric_emptying_delay_pct": 53.0,
+      "satiety_index": 9.3,
+      "weight_loss_pct": 9.47
+    },
+    {
+      "week": 12,
+      "agonist_concentration_nm": 24.1,
+      "glp1_receptor_occupancy_pct": 95.6,
+      "gip_receptor_occupancy_pct": 98.5,
+      "gastric_emptying_delay_pct": 53.0,
+      "satiety_index": 9.3,
+      "weight_loss_pct": 10.45
+    }
+  ]
+}
