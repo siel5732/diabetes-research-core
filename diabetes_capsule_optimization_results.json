@@ -1,0 +1,13 @@
+{
+  "optimal_biocapsule_genes": {
+    "barium_crosslinking_density_percent": 1.8101,
+    "purified_lecithin_concentration_percent": 0.4117,
+    "hydrogel_pore_size_nm": 6.7634
+  },
+  "optimized_performance_metrics": {
+    "igg_immune_exclusion_efficiency_percent": 98.0532,
+    "oxygen_insulin_diffusion_efficiency_percent": 58.5315,
+    "52_week_islet_viability_percent": 76.9295
+  },
+  "weighted_fitness_score": 79.8596
+}
