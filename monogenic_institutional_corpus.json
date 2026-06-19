@@ -1,0 +1,88 @@
+{
+  "source_institutions": [
+    "Exeter Monogenic Diabetes Group (University of Exeter)",
+    "University of Chicago Monogenic Diabetes Registry"
+  ],
+  "total_articles": 6,
+  "articles": [
+    {
+      "pmcid": "PMC13271835",
+      "title": "Efficacy and Tolerability of Topotecan/Cyclophosphamide/Dinutuximab in Relapsed and Refractory High-Risk Neuroblastoma: A Multi-Institutional Retrospective Study.",
+      "journal": "Pediatr Blood Cancer",
+      "publish_date": "2026 May",
+      "authors": [
+        "Lerman BJ",
+        "King M",
+        "Mody R",
+        "Onyeama SJ",
+        "Marachelian A"
+      ],
+      "summary_text": "Title: Efficacy and Tolerability of Topotecan/Cyclophosphamide/Dinutuximab in Relapsed and Refractory High-Risk Neuroblastoma: A Multi-Institutional Retrospective Study.. Published in Pediatr Blood Cancer on 2026 May. Key Authors: Lerman BJ, King M, Mody R."
+    },
+    {
+      "pmcid": "PMC7619148",
+      "title": "The Role of ONECUT1 Variants in Monogenic and Type 2 Diabetes Mellitus.",
+      "journal": "Diabetes",
+      "publish_date": "2023 Nov 1",
+      "authors": [
+        "Russ-Silsby J",
+        "Patel KA",
+        "Laver TW",
+        "Hawkes G",
+        "Johnson MB"
+      ],
+      "summary_text": "Title: The Role of ONECUT1 Variants in Monogenic and Type 2 Diabetes Mellitus.. Published in Diabetes on 2023 Nov 1. Key Authors: Russ-Silsby J, Patel KA, Laver TW."
+    },
+    {
+      "pmcid": "PMC13236825",
+      "title": "Polygenic background contributes to GCK-MODY clinical presentation and glycaemic variability.",
+      "journal": "Diabetologia",
+      "publish_date": "2026 Jul",
+      "authors": [
+        "Murray Leech J",
+        "Arni AM",
+        "Chundru VK",
+        "Sharp LN",
+        "Colclough K"
+      ],
+      "summary_text": "Title: Polygenic background contributes to GCK-MODY clinical presentation and glycaemic variability.. Published in Diabetologia on 2026 Jul. Key Authors: Murray Leech J, Arni AM, Chundru VK."
+    },
+    {
+      "pmcid": "PMC13253585",
+      "title": "Crossing paths: historical and philosophical perspectives on cancer and diabetes classifications.",
+      "journal": "Hist Philos Life Sci",
+      "publish_date": "2026 Jun 10",
+      "authors": [
+        "Yvonnet S",
+        "Tybjerg K"
+      ],
+      "summary_text": "Title: Crossing paths: historical and philosophical perspectives on cancer and diabetes classifications.. Published in Hist Philos Life Sci on 2026 Jun 10. Key Authors: Yvonnet S, Tybjerg K."
+    },
+    {
+      "pmcid": "PMC13237596",
+      "title": "Kinship Trouble: What, When, Where, Why, and How-and So What?",
+      "journal": "Camb Archaeol J",
+      "publish_date": "2026 May",
+      "authors": [
+        "Cveček S",
+        "Raghavan M",
+        "Bickle P"
+      ],
+      "summary_text": "Title: Kinship Trouble: What, When, Where, Why, and How-and So What?. Published in Camb Archaeol J on 2026 May. Key Authors: Cveček S, Raghavan M, Bickle P."
+    },
+    {
+      "pmcid": "PMC13226718",
+      "title": "Multi-ancestry, trans-generational GWAS meta-analysis of gestational diabetes and glycaemic traits during pregnancy reveals limited evidence of pregnancy-specific genetic effects.",
+      "journal": "Nat Commun",
+      "publish_date": "2026 Jun 1",
+      "authors": [
+        "Brito Nunes C",
+        "Rukins V",
+        "Cisse AH",
+        "White F",
+        "McBride N"
+      ],
+      "summary_text": "Title: Multi-ancestry, trans-generational GWAS meta-analysis of gestational diabetes and glycaemic traits during pregnancy reveals limited evidence of pregnancy-specific genetic effects.. Published in Nat Commun on 2026 Jun 1. Key Authors: Brito Nunes C, Rukins V, Cisse AH."
+    }
+  ]
+}
