@@ -1,0 +1,26 @@
+{
+  "Standard Unpatterned Macro-Capsule": {
+    "core_oxygen_mM": 0.0,
+    "mid_oxygen_mM": 0.0,
+    "boundary_oxygen_mM": 0.24,
+    "effective_diffusion_cm2_s": 1.08e-05,
+    "er_stress_apoptosis_rate_pct": 45.0,
+    "average_cell_viability_pct": 7.11
+  },
+  "Acoustically-Aligned Micro-Capsule": {
+    "core_oxygen_mM": 0.0,
+    "mid_oxygen_mM": 0.0,
+    "boundary_oxygen_mM": 0.24,
+    "effective_diffusion_cm2_s": 1.8e-05,
+    "er_stress_apoptosis_rate_pct": 25.0,
+    "average_cell_viability_pct": 13.69
+  },
+  "Acoustic-Aligned + Chaperone GRP78 Overexpression": {
+    "core_oxygen_mM": 0.0,
+    "mid_oxygen_mM": 0.0,
+    "boundary_oxygen_mM": 0.24,
+    "effective_diffusion_cm2_s": 1.8e-05,
+    "er_stress_apoptosis_rate_pct": 2.0,
+    "average_cell_viability_pct": 20.1
+  }
+}
