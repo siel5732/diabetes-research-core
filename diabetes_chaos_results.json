@@ -1,0 +1,98 @@
+{
+    "metadata": {
+        "title": "Brittle LADA Chaos Attractor Reconstruction Solver",
+        "PI": "Sir Frederick Banting",
+        "DSP_Architect": "Aphex Twin",
+        "date": "2026-06-19",
+        "parameters": {
+            "sigma": 10.0,
+            "rho": 28.0,
+            "beta": 2.6667,
+            "steps": 1200,
+            "tau_samples": 15,
+            "equivalent_time_delay_mins": 75
+        }
+    },
+    "reconstruction_metrics": {
+        "glucose_correlation_r": 1.0,
+        "insulin_correlation_r": 0.3747,
+        "receptor_correlation_r": -0.0026,
+        "spatial_trajectory_fidelity_pct": 45.91
+    },
+    "time_series_sample": {
+        "cgm_readings_mg_dL": [
+            158.5,
+            158.5,
+            158.6,
+            158.8,
+            159.0,
+            159.2,
+            159.5,
+            159.9,
+            160.3,
+            160.8,
+            161.4,
+            162.0,
+            162.7,
+            163.4,
+            164.3,
+            165.2,
+            166.2,
+            167.4,
+            168.6,
+            170.0
+        ],
+        "reconstructed_vectors_sample": [
+            [
+                196.5,
+                165.2,
+                158.5
+            ],
+            [
+                200.4,
+                166.2,
+                158.5
+            ],
+            [
+                204.5,
+                167.4,
+                158.6
+            ],
+            [
+                209.0,
+                168.6,
+                158.8
+            ],
+            [
+                213.8,
+                170.0,
+                159.0
+            ],
+            [
+                218.9,
+                171.4,
+                159.2
+            ],
+            [
+                224.3,
+                173.1,
+                159.5
+            ],
+            [
+                230.0,
+                174.9,
+                159.9
+            ],
+            [
+                235.9,
+                176.8,
+                160.3
+            ],
+            [
+                242.0,
+                179.0,
+                160.8
+            ]
+        ]
+    }
+}
