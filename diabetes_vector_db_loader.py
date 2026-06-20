@@ -133,6 +133,35 @@ def index_diabetes_data():
                 metadata={"source": "Thermodynamic_Simulation", "resynchronizer_id": results["resynchronizer_id"]}
             )
 
+    # 3. Dynamic Crawler: Scan and index all local .json and .md files
+    print("[+] Dynamically crawling and indexing local simulation results and preprints...")
+    for file in os.listdir("."):
+        if file.endswith(".json") and file not in ["diabetes_vector_db.json", "monogenic_institutional_corpus.json", "diabetes_quantum_cognitive_metabolism_results.json"]:
+            print(f"    - Indexing local JSON: {file}")
+            try:
+                with open(file, "r", encoding="utf-8") as f:
+                    content = json.load(f)
+                    text = f"Local simulation results file: {file}. Content summary: {json.dumps(content)[:1000]}"
+                    vdb.add_document(
+                        doc_id=f"FILE_JSON_{file}",
+                        text=text,
+                        metadata={"source": "Dynamic_Crawler", "file": file}
+                    )
+            except Exception as e:
+                print(f"      [❌] Error indexing {file}: {e}")
+        elif file.endswith(".md") and file not in ["README.md"]:
+            print(f"    - Indexing local Preprint MD: {file}")
+            try:
+                with open(file, "r", encoding="utf-8") as f:
+                    text = f.read()
+                    vdb.add_document(
+                        doc_id=f"FILE_MD_{file}",
+                        text=text[:2000],  # first 2000 chars for indexing
+                        metadata={"source": "Dynamic_Crawler", "file": file}
+                    )
+            except Exception as e:
+                print(f"      [❌] Error indexing {file}: {e}")
+
     # Save to disk
     vdb.save_db()
     
