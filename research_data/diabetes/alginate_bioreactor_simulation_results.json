@@ -1,4 +1,16 @@
 {
+    "metadata": {
+        "title": "Permselective Alginate Hydrogel Micro-Bioreactors Krogh Oxygen Diffusion Simulation",
+        "p_i_personas": [
+            "Sir Frederick Banting",
+            "Imhotep"
+        ],
+        "computational_leads": [
+            "Aphex",
+            "Trent"
+        ],
+        "timestamp": "2026-06-30"
+    },
     "parameters": {
         "R_capsule_cm": 0.05,
         "R_spheroid_cm": 0.02,
@@ -3018,5 +3030,7 @@
         8.062348368717951e-10,
         8.0623486167774e-10,
         8.062348864836849e-10
-    ]
+    ],
+    "final_C_alginate": 7.541473561913455e-08,
+    "final_C_spheroid": 8.062348864836849e-10
 }
