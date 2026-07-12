@@ -1,214 +1,209 @@
-#!/usr/bin/env python3
-"""
-Pancreatic Islet Xenotransplant Neovascularization & Angiogenesis Coupling Simulator
-Designed by Chief PI Sir Frederick Banting under the Subconscious Systems Group.
-Models temporal core oxygenation, hypoxia-induced VEGF secretion, host capillary sprout growth, 
-neovascular perfusion feedback, and cellular viability across healthy, impaired, and acoustic-patterned cohorts.
-"""
-
+import numpy as np
+from scipy.integrate import solve_ivp
 import json
-import math
 import os
 
-def run_simulation():
-    # Time parameters (days)
-    dt = 0.5  # Half-day steps
-    total_days = 60.0
-    num_steps = int(total_days / dt)
+def islet_ode_system(t, y, params):
+    I, V, A, G, N = y
     
-    # Biophysical parameters
-    C_O2_blood = 0.22  # mM (Normal oxygen tension in arterial blood)
-    C_O2_avascular = 0.02  # mM (Hypoxic baseline prior to neovascularization)
+    # Extract parameters
+    r_I = params['r_I']
+    K_I = params['K_I']
+    h_V = params['h_V']
+    d_I0 = params['d_I0']
+    eta_V = params['eta_V']
+    kappa_im = params['kappa_im']
     
-    k_death_hypoxia = 0.12  # Islet cell death rate under hypoxia (1/day)
-    Km_hypoxia = 0.015  # Km for hypoxia-mediated cell death (mM)
+    r_V = params['r_V']
+    K_V = params['K_V']
+    h_A = params['h_A']
+    theta_V = params['theta_V']
+    d_V = params['d_V']
     
-    k_vegf = 0.6  # VEGF secretion scaling constant (relative units/day)
-    Km_O2_sense = 0.03  # Oxygen sensing threshold for VEGF expression (mM)
-    lambda_vegf = 0.35  # VEGF degradation/clearance rate (1/day)
+    sigma_A = params['sigma_A']
+    h_O2 = params['h_O2']
+    d_A = params['d_A']
+    chi_A = params['chi_A']
     
-    # Capillary sprout angiogenesis rates (1/day)
-    k_vessels_healthy = 6.5
-    k_vessels_impaired = 0.15 * k_vessels_healthy  # 85% reduction in diabetic vasculopathy
-    lambda_vessels = 0.03  # Capillary vessel regression/pruning rate
+    P_G = params['P_G']
+    d_G = params['d_G']
+    lambda_G = params['lambda_G']
     
-    # Diffusion resistance (oxygen gradient from boundary to core, mM)
-    gradient_random = 0.08  # Severe gradient due to random islet clumping
-    gradient_acoustic = 0.01  # Negligible gradient due to thin concentric acoustic patterning
+    psi_N = params['psi_N']
+    h_G = params['h_G']
+    d_N = params['d_N']
     
-    # Cohorts:
-    # 1. Healthy Host + Random Capsule (Normal angiogenesis)
-    # 2. Impaired Host + Random Capsule (Diabetic vasculopathy, failed vessel growth)
-    # 3. Impaired Host + Acoustic-Patterned Capsule (Optimized geometry, lower diffusion resistance)
-    cohorts = {
-        "healthy_host_random": {"k_vessels": k_vessels_healthy, "gradient": gradient_random},
-        "impaired_host_random": {"k_vessels": k_vessels_impaired, "gradient": gradient_random},
-        "impaired_host_acoustic": {"k_vessels": k_vessels_impaired, "gradient": gradient_acoustic}
-    }
+    # ODEs
+    # 1. Islet Cell Density
+    # Protective effect of vessels: death rate decreases with V
+    death_rate_I = d_I0 / (1.0 + eta_V * V)
+    dIdt = r_I * I * (1.0 - I / K_I) * (V / (h_V + V)) - death_rate_I * I - kappa_im * I
     
-    # Initialize states
-    states = {}
-    for name in cohorts.keys():
-        states[name] = {
-            "viability": 100.0,  # percentage
-            "vegf": 0.0,  # relative concentration
-            "vessels": 0.0,  # percentage neovascularization (0 to 100%)
-            "boundary_O2": C_O2_avascular,  # mM
-            "core_O2": max(0.0001, C_O2_avascular - cohorts[name]["gradient"])  # mM
+    # 2. Vascular Density
+    dVdt = r_V * V * (1.0 - V / K_V) * (A / (h_A + A)) + theta_V * A - d_V * V
+    
+    # 3. Angiogenic Factors (VEGF)
+    # Hypoxic stimulation of VEGF is high when vascularization is low
+    hypoxia_stim = h_O2 / (h_O2 + V)
+    dAdt = sigma_A * I * hypoxia_stim - d_A * A - chi_A * V * (A / (h_A + A))
+    
+    # 4. Systemic Glucose
+    dGdt = P_G - d_G * G - lambda_G * N * G
+    
+    # 5. Systemic Insulin
+    # GSIS is modeled by a Hill function; vascular coupling represents islet perfusion
+    gsis = (G ** 2) / (h_G ** 2 + G ** 2)
+    dNdt = psi_N * I * gsis * (V / K_V) - d_N * N
+    
+    return [dIdt, dVdt, dAdt, dGdt, dNdt]
+
+# Set up parameters
+params = {
+    'r_I': 0.015,       # Islet cell self-renewal / regeneration rate (day^-1)
+    'K_I': 1.2,         # Islet cell density capacity (millions of cells)
+    'h_V': 0.1,         # Half-saturation constant for vascular-dependent growth
+    'd_I0': 0.06,       # Hypoxic death rate (day^-1) when avascular (V = 0)
+    'eta_V': 25.0,      # Vascular protection coefficient against hypoxia-induced apoptosis
+    'kappa_im': 0.005,  # Graft-rejection / baseline immune-mediated death rate (day^-1)
+    
+    'r_V': 0.15,        # Angiogenic vessel growth rate (day^-1)
+    'K_V': 1.0,         # Maximum vessel carrying capacity (normalized density)
+    'h_A': 0.15,        # Half-saturation constant of VEGF for angiogenesis
+    'theta_V': 0.05,    # De novo EPC recruitment rate per unit VEGF (day^-1)
+    'd_V': 0.01,        # Capillary vessel regression/pruning rate (day^-1)
+    
+    'sigma_A': 0.4,     # Maximal VEGF secretion rate by islet cells under hypoxia (day^-1)
+    'h_O2': 0.25,       # Oxygen / vascularization half-saturation constant for HIF-1alpha activation
+    'd_A': 0.35,        # VEGF degradation/clearance rate (day^-1)
+    'chi_A': 0.1,       # VEGF receptor binding / endothelial cellular uptake rate
+    
+    'P_G': 250.0,       # Endogenous glucose production rate (mg/dL / day)
+    'd_G': 0.5,         # Insulin-independent glucose clearance rate (day^-1)
+    'lambda_G': 0.2,    # Insulin-dependent glucose disposal efficiency ((muIU/mL)^-1 day^-1)
+    
+    'psi_N': 340.0,     # Max insulin secretion rate per million islet cells (muIU/mL / day)
+    'h_G': 120.0,       # Glucose threshold concentration for insulin release (mg/dL)
+    'd_N': 8.0          # Systemic insulin degradation rate (day^-1)
+}
+
+# Initial conditions: transplanted islets in a diabetic host
+I0 = 1.0     # Transplanted islet load (1.0 million cells)
+V0 = 0.02    # Minimal baseline host vascularization at graft site (2% density)
+A0 = 0.05    # Minimal initial VEGF in tissue
+G0 = 360.0   # Severe diabetic hyperglycemia (360 mg/dL)
+N0 = 0.5     # Low baseline insulin in type 1 diabetes (0.5 muIU/mL)
+
+y0 = [I0, V0, A0, G0, N0]
+t_span = (0.0, 180.0)  # Simulate 180 days (6 months)
+t_eval = np.linspace(0.0, 180.0, 181)  # Daily evaluation
+
+sol = solve_ivp(islet_ode_system, t_span, y0, args=(params,), t_eval=t_eval, method='Radau')
+
+# Check results and print time course every 10 days for a more detailed look
+print("Success:", sol.success)
+print(f"{'Day':<5} | {'Islets':<8} | {'Vessels':<8} | {'VEGF':<8} | {'Glucose':<8} | {'Insulin':<8}")
+print("-" * 60)
+for idx in range(0, 181, 10):
+    t = sol.t[idx]
+    I = sol.y[0][idx]
+    V = sol.y[1][idx]
+    A = sol.y[2][idx]
+    G = sol.y[3][idx]
+    N = sol.y[4][idx]
+    print(f"{t:<5.1f} | {I:<8.4f} | {V:<8.4f} | {A:<8.4f} | {G:<8.2f} | {N:<8.3f}")
+
+print("\nFinal State:")
+print("Islet final:", sol.y[0][-1])
+print("Vessels final:", sol.y[1][-1])
+print("VEGF final:", sol.y[2][-1])
+print("Glucose final:", sol.y[3][-1])
+print("Insulin final:", sol.y[4][-1])
+
+# Save the simulation results to JSON
+results_dir = "research_data/diabetes"
+os.makedirs(results_dir, exist_ok=True)
+json_path = os.path.join(results_dir, "diabetes_simulation_data.json")
+
+data_to_save = {
+    "metadata": {
+        "model_name": "Stem-Cell-Derived Islet Cell Xenotransplant Neovascularization & Angiogenesis Coupling Simulator",
+        "description": "High-fidelity ordinary differential equation (ODE) simulator tracking stem-cell islet graft survival, neovascularization, VEGF signaling, systemic glucose clearance, and glucose-stimulated insulin secretion (GSIS) coupled with graft perfusion.",
+        "authors": ["Aphex", "Dr. Marie Curie", "Sir Frederick Banting"],
+        "date": "2026-06-22",
+        "time_units": "days",
+        "state_variable_units": {
+            "islet_cell_count": "millions of cells (or normalized index, initial=1.0 million)",
+            "vascular_density": "normalized capillary density (0.0 to 1.0)",
+            "vegf_concentration": "arbitrary concentration units (ng/mL)",
+            "glucose_level": "systemic blood glucose (mg/dL)",
+            "insulin_production": "systemic insulin concentration (muIU/mL)"
         }
-        
-    trajectory = []
-    
-    for step in range(num_steps):
-        t = step * dt
-        
-        step_data = {"time_days": round(t, 1)}
-        
-        for name, c in cohorts.items():
-            s = states[name]
-            
-            # 1. Update Boundary Oxygen based on vessel density
-            s["boundary_O2"] = C_O2_avascular + (C_O2_blood - C_O2_avascular) * (s["vessels"] / 100.0)
-            
-            # 2. Compute Core Oxygen (boundary minus diffusion resistance gradient)
-            s["core_O2"] = max(0.0001, s["boundary_O2"] - c["gradient"])
-            
-            # 3. Islet cell viability decay under severe core hypoxia
-            if s["core_O2"] < 0.015:
-                # Hypoxia-induced death (Hill-like activation)
-                hypoxia_factor = Km_hypoxia / (s["core_O2"] + Km_hypoxia)
-                d_viability = -k_death_hypoxia * hypoxia_factor * s["viability"]
-            else:
-                d_viability = 0.0
-                
-            s["viability"] = max(0.1, s["viability"] + d_viability * dt)
-            
-            # 4. Hypoxia-induced VEGF secretion (only viable cells secrete VEGF)
-            v_vegf_sec = k_vegf * (Km_O2_sense / (s["core_O2"] + Km_O2_sense)) * (s["viability"] / 100.0)
-            d_vegf = v_vegf_sec - lambda_vegf * s["vegf"]
-            s["vegf"] = max(0.0, s["vegf"] + d_vegf * dt)
-            
-            # 5. Host capillary sprout angiogenesis (vessel growth) driven by local VEGF
-            d_vessels = c["k_vessels"] * s["vegf"] * (100.0 - s["vessels"]) / 100.0 - lambda_vessels * s["vessels"]
-            s["vessels"] = max(0.0, min(100.0, s["vessels"] + d_vessels * dt))
-            
-            # Log results
-            step_data[f"{name}_core_O2"] = round(s["core_O2"], 4)
-            step_data[f"{name}_vegf"] = round(s["vegf"], 3)
-            step_data[f"{name}_vessels"] = round(s["vessels"], 1)
-            step_data[f"{name}_viability"] = round(s["viability"], 1)
-            
-        trajectory.append(step_data)
-        
-    # Save as JSON
-    out_path = "diabetes_research_core/diabetes_islet_neovascularization_results.json"
-    results = {
-        "metadata": {
-            "title": "Pancreatic Islet Xenotransplant Neovascularization & Angiogenesis Perfusion Feedback Simulation",
-            "PI": "Sir Frederick Banting",
-            "date": "2026-06-19",
-            "units": {
-                "time": "days",
-                "core_O2": "mM (normal blood = 0.22 mM)",
-                "vegf": "relative concentration",
-                "vessels": "percentage capillary density (0 to 100)",
-                "viability": "percentage islet survival"
-            }
-        },
-        "trajectory": trajectory
+    },
+    "parameters": params,
+    "initial_conditions": {
+        "islet_cell_count": I0,
+        "vascular_density": V0,
+        "vegf_concentration": A0,
+        "glucose_level": G0,
+        "insulin_production": N0
+    },
+    "simulation_results": {
+        "time_points": list(sol.t),
+        "islet_cell_count": list(sol.y[0]),
+        "vascular_density": list(sol.y[1]),
+        "vegf_concentration": list(sol.y[2]),
+        "glucose_level": list(sol.y[3]),
+        "insulin_production": list(sol.y[4])
     }
-    with open(out_path, "w") as f:
-        json.dump(results, f, indent=4)
-    print(f"Simulation completed. Results saved to: {out_path}")
-    
-    generate_preprint_report(states)
+}
 
-def generate_preprint_report(final_states):
-    paper = """# 🧪 Spatial Angiogenesis Coupling & Oxygen Perfusion Feedback in Alginate-Encapsulated Islet Xenotransplants
+with open(json_path, 'w') as f:
+    json.dump(data_to_save, f, indent=4)
 
-**Author:** Sir Frederick Banting, Chief Principal Investigator, Diabetes & Metabolic Systems Core  
-**Collaborators:** Zachary Sielaff, St.Acutis, Trent Reznor, Aphex Twin  
-**Published:** June 19, 2026  
-**Repository:** `diabetes_research_core`  
+print(f"\nSuccessfully wrote simulation results to {json_path}")
 
----
+# Generate professional multi-panel plot
+import matplotlib.pyplot as plt
 
-## Abstract
+plt.style.use('seaborn-v0_8-whitegrid' if 'seaborn-v0_8-whitegrid' in plt.style.available else 'default')
+fig, axs = plt.subplots(3, 1, figsize=(10, 12), sharex=True)
 
-Alginate-encapsulated stem-cell-derived beta-cell xenotransplantation represents a potential functional cure for insulin-dependent atypical diabetes (MODY3). However, following transplantation, the hydrogel spheres are initially completely avascular and devoid of direct perfusion. The encapsulated islets must survive solely on passive oxygen diffusion from the surrounding host tissue. Under severe core hypoxia, islets secrete Vascular Endothelial Growth Factor (VEGF) to recruit and grow host capillaries to the capsule boundary (neovascularization), establishing systemic perfusion. 
+# Panel 1: Islet Survival and Vascularization
+ax1_twin = axs[0].twinx()
+p1, = axs[0].plot(sol.t, sol.y[0], 'b-', linewidth=2.5, label='Islet Cell Count (I)')
+p2, = ax1_twin.plot(sol.t, sol.y[1], 'r--', linewidth=2.5, label='Vascular Density (V)')
+axs[0].set_ylabel('Islet Count (Millions)', color='b', fontsize=12)
+ax1_twin.set_ylabel('Vascular Density (Normalized)', color='r', fontsize=12)
+axs[0].tick_params(axis='y', labelcolor='b')
+ax1_twin.tick_params(axis='y', labelcolor='r')
+axs[0].set_title('A: Graft Survival and Neovascularization Dynamics', fontsize=14, fontweight='bold', loc='left')
+axs[0].grid(True, linestyle=':', alpha=0.6)
+lines1 = [p1, p2]
+axs[0].legend(lines1, [l.get_label() for l in lines1], loc='upper right', frameon=True)
 
-This paper presents an ordinary differential equation (ODE) systems biology model of post-transplantation angiogenesis coupling, tracking temporal core oxygen levels, hypoxia-stimulated VEGF kinetics, host capillary growth, and islet cell viability. Simulating a 60-day post-transplant period, we mathematically prove that in an **Impaired Host** (e.g., diabetic vasculopathy, where host angiogenesis is reduced by 85%), standard randomly clumped microcapsules suffer complete core anoxia and necrosis, resulting in **$0.1\%$ cell viability** (total transplant failure). Conversely, using an **Acoustic-Patterned Concentric Capsule Design**, the thin concentric ring geometry reduces internal diffusion resistance by over $87\%$, allowing the islets to survive the early avascular phase and reach a highly therapeutic **$91.6\%$ long-term cell viability**, overcoming the host's vascular impairment.
+# Panel 2: VEGF Concentration (Angiogenic Signaling)
+axs[1].plot(sol.t, sol.y[2], 'g-', linewidth=2.5, label='VEGF (A)')
+axs[1].set_ylabel('VEGF Conc. (ng/mL)', fontsize=12)
+axs[1].set_title('B: VEGF-driven Angiogenic Signaling', fontsize=14, fontweight='bold', loc='left')
+axs[1].grid(True, linestyle=':', alpha=0.6)
+axs[1].legend(loc='upper right', frameon=True)
 
----
+# Panel 3: Glucose and Insulin Dynamics
+ax3_twin = axs[2].twinx()
+p3, = axs[2].plot(sol.t, sol.y[3], 'purple', linestyle='-', linewidth=2.5, label='Blood Glucose (G)')
+p4, = ax3_twin.plot(sol.t, sol.y[4], 'orange', linestyle='-.', linewidth=2.5, label='Systemic Insulin (N)')
+axs[2].set_ylabel('Blood Glucose (mg/dL)', color='purple', fontsize=12)
+ax3_twin.set_ylabel('Insulin Conc. ($\mu$IU/mL)', color='orange', fontsize=12)
+axs[2].tick_params(axis='y', labelcolor='purple')
+ax3_twin.tick_params(axis='y', labelcolor='orange')
+axs[2].set_xlabel('Time (Days)', fontsize=12)
+axs[2].set_title('C: Metabolic Recovery & Glycemic Homeostasis', fontsize=14, fontweight='bold', loc='left')
+axs[2].grid(True, linestyle=':', alpha=0.6)
+lines3 = [p3, p4]
+axs[2].legend(lines3, [l.get_label() for l in lines3], loc='upper right', frameon=True)
 
-## Systems Biology Model Formulation
-
-The temporal angiogenesis feedback and cellular survival coupling are governed by:
-
-### 1. Perfusion-Mediated Boundary and Core Oxygen
-Boundary oxygen tension ($C_{O2,bound}$) rises from an avascular hypoxic baseline ($C_{O2,avasc} = 0.02 \\text{ mM}$) to normal arterial levels ($C_{O2,blood} = 0.22 \\text{ mM}$) as host capillary density ($h_{vessels}$) increases:
-$$C_{O2,bound}(t) = C_{O2,avasc} + (C_{O2,blood} - C_{O2,avasc}) \\left( \\frac{h_{vessels}(t)}{100.0} \\right)$$
-Core oxygen concentration ($C_{O2,core}$) is restricted by the internal physical diffusion resistance gradient ($\\Delta C_{diff}$):
-$$C_{O2,core}(t) = \\max(0.0001, C_{O2,bound}(t) - \\Delta C_{diff})$$
-Where:
-*   $\\Delta C_{diff} = 0.08 \\text{ mM}$ (Standard randomly clumped capsule, severe diffusion barrier)
-*   $\\Delta C_{diff} = 0.01 \\text{ mM}$ (Optimized concentric Acoustic-Patterned capsule, thin circular diffusion barrier)
-
-### 2. Hypoxia-Induced Cell Viability Decay ($V$)
-If core oxygen falls below the critical threshold ($0.015 \\text{ mM}$), cells undergo hypoxic apoptosis:
-$$\\frac{dV}{dt} = - k_{death} \\left( \\frac{Km_{hyp}}{C_{O2,core} + Km_{hyp}} \\right) V$$
-Where $k_{death} = 0.12 \\text{ day}^{-1}$ and $Km_{hyp} = 0.015 \\text{ mM}$.
-
-### 3. Hypoxia-Stimulated VEGF Kinetics
-Hypoxic (but viable) cells secrete VEGF to recruit host capillaries:
-$$\\frac{d[VEGF]}{dt} = k_{vegf} \\left( \\frac{Km_{O2\\_sense}}{C_{O2,core} + Km_{O2\\_sense}} \\right) \\left( \\frac{V(t)}{100.0} \\right) - \\lambda_{vegf} [VEGF]$$
-Where $k_{vegf} = 0.6 \\text{ relative units/day}$ and $\\lambda_{vegf} = 0.35 \\text{ day}^{-1}$.
-
-### 4. Chemotactic Host Capillary Growth ($h_{vessels}$)
-Local VEGF concentrations stimulate the migration and growth of host capillary sprouts:
-$$\\frac{dh_{vessels}}{dt} = k_{vessels} [VEGF] \\left( \\frac{100.0 - h_{vessels}}{100.0} \\right) - \\lambda_{vessels} h_{vessels}$$
-Where:
-*   $k_{vessels\\_healthy} = 6.5 \\text{ day}^{-1}$ (Normal host tissue)
-*   $k_{vessels\\_impaired} = 0.975 \\text{ day}^{-1}$ (Impaired diabetic vasculopathy host tissue)
-*   $\\lambda_{vessels} = 0.03 \\text{ day}^{-1}$ (Vessel regression/pruning rate)
-
----
-
-## Simulation Results & Oxygen Perfusion Feedback
-
-We simulated transplant neovascularization over a 60-day post-transplantation period.
-
-### Transplant Survival Profile at 60 Days
-
-| Cohort | Boundary O2 (mM) | Core O2 (mM) | Capillary Density (%) | Peak VEGF Secreted | Islet Cell Viability (%) | Status |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Healthy Host + Random** | 0.203 mM | 0.123 mM | 91.5% | 1.12 units | 74.3% | Successful Neovascularization |
-| **Impaired Host + Random**| 0.054 mM | 0.000 mM | 17.1% | 0.15 units | 0.1% | **Anoxic Transplant Failure** |
-| **Impaired Host + Acoustic**| 0.043 mM | 0.033 mM | 11.5% | 0.16 units | 91.6% | **Optimized Geometric Rescue** |
-
-### Key Biophysical Findings:
-1.  **The Angiogenesis Failure Trap (Impaired Host + Random):** In a host with impaired diabetic vasculopathy, capillary recruitment is extremely sluggish (peaking at only $17.1\\%$ density). Because the randomly clumped capsule has a severe $0.08\\text{ mM}$ diffusion gradient, core oxygen remains permanently at $0.000\\text{ mM}$, triggering complete core necrosis and islet death (**$0.1\\%$ survival**).
-2.  **The Acoustic-Patterned Geometric Rescue:** In an Acoustic-Patterned concentric ring capsule, the internal diffusion resistance is virtually eliminated (gradient is only $0.01\\text{ mM}$). Even though the host environment is impaired and capillary growth is weak ($11.5\\%$), the core oxygen is kept at a safe **$0.033\\text{ mM}$** (above the hypoxia death threshold). The islets survive the early critical weeks, achieving **91.6%** long-term viability.
-3.  **The Feedback Dynamic:** In the healthy host, VEGF levels spike early ($1.12$ units) and collapse once vessels establish full perfusion and relieve hypoxia. In the impaired random host, VEGF fails to rise because the hypoxic cells apoptose too quickly, cutting off the signal before capillaries can grow.
-
----
-
-## Conclusion
-
-This coupled angiogenesis-perfusion model mathematically proves that transplant success is highly dependent on the host's vascular health and the capsule's internal geometry. By showing that an Acoustic-Patterned Concentric capsule achieves over **$91\%$ islet survival** even within a severely vascular-impaired host, we validate physical acoustic alignment as an elite bioengineering therapy, offering a powerful blueprint for diabetic transplant scaling.
-"""
-    # Replace final values manually to keep them exact
-    final_healthy_v = round(final_states["healthy_host_random"]["viability"], 1)
-    final_impaired_random_v = round(final_states["impaired_host_random"]["viability"], 1)
-    final_impaired_acoustic_v = round(final_states["impaired_host_acoustic"]["viability"], 1)
-    
-    paper = paper.replace("74.3%", f"{final_healthy_v}%")
-    paper = paper.replace("0.1%", f"{final_impaired_random_v}%")
-    paper = paper.replace("91.6%", f"{final_impaired_acoustic_v}%")
-    
-    with open("diabetes_research_core/islet_neovascularization_paper.md", "w") as f:
-        f.write(paper)
-    print("Preprint paper successfully drafted at diabetes_research_core/islet_neovascularization_paper.md")
-
-if __name__ == "__main__":
-    run_simulation()
+plt.tight_layout()
+plot_path = os.path.join(results_dir, "islet_simulation_plot.png")
+plt.savefig(plot_path, dpi=300)
+plt.close()
+print(f"Successfully generated and saved simulation plots to {plot_path}")
