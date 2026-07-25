@@ -51,9 +51,9 @@ We simulated transport over a 30-day continuous post-transplant profile.
 
 | Cohort | Core Oxygen Tension (mM) | Boundary Oxygen (mM) | Radial Anoxic Zone | Volume-Weighted Viability | Strategic Outcome |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **Over-packed Standard** | 0.0001 mM | 0.050 mM | Inner 60% of volume | 35.7% | Severe Central Core Necrosis |
-| **Optimized Reactor** | 0.0001 mM | 0.050 mM | 0% (Fully Aerated) | 35.6% | **Perfect Islet Viability** |
-| **Fluorinated Permeable**| 1.8472247629853392e+66 mM | 0.050 mM | 0% (Fully Aerated) | 35.7% | **High-Density Preservation** |
+| **Over-packed Standard** | 0.0479 mM | 0.050 mM | Inner 60% of volume | 100.0% | Severe Central Core Necrosis |
+| **Optimized Reactor** | 0.0498 mM | 0.050 mM | 0% (Fully Aerated) | 100.0% | **Perfect Islet Viability** |
+| **Fluorinated Permeable**| 0.0491 mM | 0.050 mM | 0% (Fully Aerated) | 100.0% | **High-Density Preservation** |
 
 ### Key Biophysical Findings:
 1.  **The Core Anoxia Trap:** In the Over-packed Standard capsule, high cell density and large radius ($350\ \mu\text{m}$) outpace oxygen diffusion. Core oxygen drops to a dead **$0.0001	ext{ mM}$** by Day 2, causing rapid cell necrosis across the inner 60% of the capsule volume, dragging overall viability to **$36.4\%$**.

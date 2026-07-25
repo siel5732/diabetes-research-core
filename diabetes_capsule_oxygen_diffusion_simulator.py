@@ -67,44 +67,71 @@ def run_simulation():
             D = c["D_eff"]
             Vmax = c["Vmax"]
             
-            new_C = [0.0] * N
-            new_V = [0.0] * N
+            # Formulate tridiagonal system: a_i * C_new[i-1] + b_i * C_new[i] + c_i * C_new[i+1] = d_i
+            a = [0.0] * N
+            b = [1.0] * N
+            c_coeff = [0.0] * N
+            d = [0.0] * N
             
-            # 1. Compute Finite-Difference Spherical Diffusion-Reaction
-            # At each node, compute: dC/dt = D * (d^2C/dr^2 + (2/r)*dC/dr) - Consumption
             for i in range(N):
-                # Boundary oxygen concentration is held at tissue tension (Dirichlet condition)
                 if i == N - 1:
-                    new_C[i] = C_O2_tissue
-                    new_V[i] = V[i]
-                    continue
-                
-                # Local radius
-                r = i * dr
-                
-                # Michaelis-Menten Oxygen Consumption (moderated by cell viability at this shell node)
-                consumption = Vmax * (C[i] / (Km_O2 + C[i])) * (V[i] / 100.0)
-                
-                if i == 0:
-                    # Center Node (r = 0): Spherical symmetry limit
-                    # d^2C/dr^2 + (2/r)*dC/dr -> 3 * d^2C/dr^2 = 3 * 2 * (C[1] - C[0]) / dr^2
-                    diffusion = 3.0 * D * 2.0 * (C[1] - C[0]) / (dr**2)
+                    # Boundary node (Dirichlet)
+                    b[i] = 1.0
+                    d[i] = C_O2_tissue
                 else:
-                    # Intermediate shell nodes
-                    d2C_dr2 = (C[i+1] - 2.0 * C[i] + C[i-1]) / (dr**2)
-                    dC_dr = (C[i+1] - C[i-1]) / (2.0 * dr)
-                    diffusion = D * (d2C_dr2 + (2.0 / r) * dC_dr)
+                    # Semi-implicit consumption coefficient
+                    K_cons = Vmax / (Km_O2 + C[i]) * (V[i] / 100.0)
                     
-                # Integrate oxygen concentration
-                new_C[i] = max(0.0001, C[i] + (diffusion - consumption) * dt)
+                    if i == 0:
+                        # Center node
+                        # dC/dt = 6 * D * (C_1 - C_0) / dr^2 - R
+                        # C_0_new * (1 + 6*dt*D/dr^2 + dt*K_cons) - C_1_new * (6*dt*D/dr^2) = C_0_old
+                        gamma = 6.0 * D * dt / (dr**2)
+                        b[i] = 1.0 + gamma + dt * K_cons
+                        c_coeff[i] = -gamma
+                        d[i] = C[i]
+                    else:
+                        # Intermediate nodes
+                        # dC/dt = D * (d2C_dr2 + (2/r)*dC/dr) - R
+                        # d2C_dr2 = (C_next - 2*C_curr + C_prev) / dr^2
+                        # dC_dr = (C_next - C_prev) / (2*dr)
+                        # So dC/dt = D/dr^2 * [ (1 + 1/i)*C_next - 2*C_curr + (1 - 1/i)*C_prev ] - R
+                        alpha = D * dt / (dr**2)
+                        a[i] = -alpha * (1.0 - 1.0 / i)
+                        b[i] = 1.0 + 2.0 * alpha + dt * K_cons
+                        c_coeff[i] = -alpha * (1.0 + 1.0 / i)
+                        d[i] = C[i]
+            
+            # Solve the tridiagonal system using Thomas algorithm
+            c_prime = [0.0] * N
+            d_prime = [0.0] * N
+            
+            c_prime[0] = c_coeff[0] / b[0]
+            d_prime[0] = d[0] / b[0]
+            
+            for i in range(1, N):
+                denom = b[i] - a[i] * c_prime[i-1]
+                if i < N - 1:
+                    c_prime[i] = c_coeff[i] / denom
+                d_prime[i] = (d[i] - a[i] * d_prime[i-1]) / denom
                 
-                # 2. Local Hypoxia-Induced Apoptosis/Necrosis
+            new_C = [0.0] * N
+            new_C[-1] = d_prime[-1]
+            for i in range(N-2, -1, -1):
+                new_C[i] = d_prime[i] - c_prime[i] * new_C[i+1]
+                
+            # Clamp to prevent tiny numerical noise
+            for i in range(N):
+                new_C[i] = max(0.0001, new_C[i])
+                
+            # Update cell viability based on new_C
+            new_V = [0.0] * N
+            for i in range(N):
                 if new_C[i] < 0.015:
                     hypoxia_factor = Km_hypoxia / (new_C[i] + Km_hypoxia)
                     d_viability = -k_death_hypoxia * hypoxia_factor * V[i]
                 else:
                     d_viability = 0.0
-                    
                 new_V[i] = max(0.1, V[i] + d_viability * dt)
                 
             # Update cohort states
@@ -112,7 +139,6 @@ def run_simulation():
             s["viability"] = new_V
             
             # Compute volume-weighted overall capsule viability
-            # Volume of shell i is proportional to r_i^2 * dr
             total_weighted_v = 0.0
             total_weight = 0.0
             for i in range(N):
