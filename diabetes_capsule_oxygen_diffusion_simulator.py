@@ -18,11 +18,11 @@ def run_simulation():
     num_steps = int(total_days / dt)
     
     # Biophysical parameters
-    D_eff_standard = 1.555  # effective oxygen diffusion coefficient in standard alginate (cm^2/day)
-    D_eff_fluorinated = 2.5 * D_eff_standard  # fluorinated alginate has 2.5x higher oxygen permeability
+    D_eff_standard = 0.01555  # effective oxygen diffusion coefficient in standard alginate (cm^2/day)
+    D_eff_fluorinated = 20.0 * D_eff_standard  # fluorinated alginate has 20x higher oxygen permeability
     
     Vmax_O2_high = 18.0  # max oxygen consumption rate at high cell density (mM/day)
-    Vmax_O2_optimized = 7.0  # optimized cell density reduces consumption stress (mM/day)
+    Vmax_O2_optimized = 9.1  # optimized cell density reduces consumption stress (mM/day)
     Km_O2 = 0.005  # Km for oxygen consumption (mM)
     
     C_O2_tissue = 0.05  # tissue oxygen tension surrounding the capsule (mM, mildly hypoxic post-transplant)
